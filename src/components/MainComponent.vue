@@ -29,7 +29,7 @@ import { TwitterIcon, TelegramIcon } from '@/components/icons'
         href="https://dexscreener.com/solana/E8YNxNTq4s21rU2Lhxt9VzkMzXxd8C4i81VUk6qd9Sqs"
         class="text-blue-500 hover:text-blue-700 transition duration-150 ease-in-out"
       >
-        Pump.fun
+        DEX SCREENER
       </a>
     </p>
     <div class="flex flex-row justify-center items-center pt-10">
