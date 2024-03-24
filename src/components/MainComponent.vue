@@ -23,6 +23,15 @@ import { TwitterIcon, TelegramIcon } from '@/components/icons'
     <p class="relative text-xl sm:text-2xl text-center pb-5">
       Can't wait to buy $JEWNOS on #Solana and for it to go to the mooon
     </p>
+    <p class="relative text-xl sm:text-2xl text-center pb-5">
+      Lets gooo! 🚀🚀🚀
+      <a
+        href="https://www.pump.fun/7Tt8Uoqq1NWHHEhYoe74ijKJowyAusgTptEnLUbnwkD6"
+        class="text-blue-500 hover:text-blue-700 transition duration-150 ease-in-out"
+      >
+        Pump.fun
+      </a>
+    </p>
     <div class="flex flex-row justify-center items-center pt-10">
       <a
         href="https://x.com/JEWNOSAURS"
