@@ -24,9 +24,9 @@ import { TwitterIcon, TelegramIcon } from '@/components/icons'
       Can't wait to buy $JEWNOS on #Solana and for it to go to the mooon
     </p>
     <p class="relative text-xl sm:text-2xl text-center pb-5">
-      Lets gooo! 🚀🚀🚀
+      Lets gooo! Live on Raydium 🚀🚀🚀
       <a
-        href="https://www.pump.fun/7Tt8Uoqq1NWHHEhYoe74ijKJowyAusgTptEnLUbnwkD6"
+        href="https://dexscreener.com/solana/E8YNxNTq4s21rU2Lhxt9VzkMzXxd8C4i81VUk6qd9Sqs"
         class="text-blue-500 hover:text-blue-700 transition duration-150 ease-in-out"
       >
         Pump.fun
