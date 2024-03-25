@@ -7,19 +7,18 @@ import TwitchEmbed from '@/components/TwitchEmbed.vue'
   <div class="flex flex-col relative place-items-center">
     <TwitchEmbed channel="bobdancing" />
     <p
-      class="[word-spacing:-1px] sm:[word-spacing:0px] relative text-xl sm:text-3xl text-center font-bold pt-10 pb-1 text-[#FFF3E0] drop-shadow-[0_3px_3px_rgba(153,69,255,0.7)]"
+      class="[word-spacing:-1px] sm:[word-spacing:0px] relative text-2xl sm:text-3xl text-center font-bold pt-10 pb-1 text-[#FFF3E0] drop-shadow-[0_3px_3px_rgba(153,69,255,0.7)]"
     >
-      Can't wait to buy $BOBDANCE on #Solana and for it to go to the mooon
+      Let's make $BOBDANCE do DANCE DANCE DANCE DANCE DANCE
     </p>
     <p class="relative text-lg sm:text-2xl text-center pt-1">
-      Lets gooo! Live on
+      Help Bob on
       <a
         href="https://www.pump.fun/"
         class="text-[#E53935] font-bold hover:text-blue-700 transition duration-150 ease-in-out"
       >
         Pump.fun
       </a>
-      🚀🚀🚀
     </p>
     <div class="flex flex-row justify-center items-center pt-10">
       <a
