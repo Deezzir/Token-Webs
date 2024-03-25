@@ -44,28 +44,17 @@ export default defineComponent({
 
 <template>
   <div
-    class="z-10 max-w-5xl w-full items-center justify-between text-2xl"
+    class="z-10 max-w-5xl w-full items-center justify-between text-xl"
     @mouseleave="isHovered = false"
   >
     <div
-      class="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit"
+      class="fixed left-0 top-0 flex w-full justify-center border-b bg-gradient-to-b pb-6 pt-8 backdrop-blur-2xl border-[#FFEB3B] bg-[#FF7043] dark:from-inherit"
     >
-      <p>
-        <b class="text-[#14F195] drop-shadow-[0_3px_3px_rgba(153,69,255,0.7)]">&nbsp;CA:&nbsp;</b
-        >{{ clampedText }}
+      <p
+        class="[word-spacing:-1px] sm:[word-spacing:0px] relative text-xl sm:text-3xl text-center font-bold text-[#FFF3E0] drop-shadow-[0_3px_3px_rgba(153,69,255,0.7)]"
+      >
+        $BOBDANCE - Bob Dancing Cockroach
       </p>
-      <div class="relative px-2" @mouseleave="(isHovered = false), (hasCopied = false)">
-        <button @click="copyText" @mouseover="isHovered = true">
-          <CopyIcon />
-        </button>
-        <div
-          v-if="isHovered"
-          class="absolute p-2 bg-gray-700 text-white text-sm rounded min-w-max whitespace-nowrap -translate-x-1/2"
-          style="bottom: -120%; left: 50%"
-        >
-          <p>{{ hasCopied ? 'Copied' : 'Copy to clipboard' }}</p>
-        </div>
-      </div>
     </div>
   </div>
 </template>

@@ -5,7 +5,7 @@ import Header from '../components/HeaderComponent.vue'
 </script>
 
 <template>
-  <main class="flex min-h-screen flex-col items-center justify-between p-12 pt-36 2xl:pt-12">
+  <main class="flex min-h-screen flex-col justify-between items-center py-8 px-14 pt-28 2xl:pt-28">
     <Header />
     <Main />
     <Footer />

@@ -1,54 +1,55 @@
 <script setup lang="ts">
 import { TwitterIcon, TelegramIcon } from '@/components/icons'
+import TwitchEmbed from '@/components/TwitchEmbed.vue'
 </script>
 
 <template>
   <div class="flex flex-col relative place-items-center">
-    <img
-      alt="jewno"
-      fetchpriority="high"
-      width="300"
-      height="300"
-      decoding="async"
-      data-nimg="1"
-      class="relative rounded-lg"
-      style="color: transparent"
-      src="../assets/jewno.png"
-    />
+    <TwitchEmbed channel="bobdancing" />
     <p
-      class="[word-spacing:-1px] sm:[word-spacing:0px] relative text-2xl sm:text-4xl text-center font-bold pt-10 pb-1 text-[#14F195] drop-shadow-[0_3px_3px_rgba(153,69,255,0.7)]"
+      class="[word-spacing:-1px] sm:[word-spacing:0px] relative text-xl sm:text-3xl text-center font-bold pt-10 pb-1 text-[#FFF3E0] drop-shadow-[0_3px_3px_rgba(153,69,255,0.7)]"
     >
-      $JEWNOS - Jewnosaurs Coin
+      Can't wait to buy $BOBDANCE on #Solana and for it to go to the mooon
     </p>
-    <p class="relative text-xl sm:text-2xl text-center pb-5">
-      Can't wait to buy $JEWNOS on #Solana and for it to go to the mooon
-    </p>
-    <p class="relative text-xl sm:text-2xl text-center pb-5">
-      Lets gooo! Live on Raydium 🚀🚀🚀
+    <p class="relative text-lg sm:text-2xl text-center pt-1">
+      Lets gooo! Live on
       <a
-        href="https://dexscreener.com/solana/E8YNxNTq4s21rU2Lhxt9VzkMzXxd8C4i81VUk6qd9Sqs"
-        class="text-blue-500 hover:text-blue-700 transition duration-150 ease-in-out"
+        href="https://www.pump.fun/"
+        class="text-[#E53935] hover:text-blue-700 transition duration-150 ease-in-out"
       >
-        DEX SCREENER
+        Pump.fun
       </a>
+      🚀🚀🚀
     </p>
     <div class="flex flex-row justify-center items-center pt-10">
       <a
-        href="https://x.com/JEWNOSAURS"
+        href="https://twitter.com/bobdancingcock"
         target="_blank"
         rel="noopener noreferrer"
-        class="bg-[#14F195] hover:bg-[#f7be47] text-[#181818] font-bold text-4xl p-2 rounded mx-4"
+        class="bg-[#E53935] hover:bg-[#f7be47] text-white font-bold text-4xl p-2 rounded mx-4"
       >
         <TwitterIcon />
       </a>
       <a
-        href="https://t.me/jewnosaurs"
+        href="https://t.me/bobdancingroach"
         target="_blank"
         rel="noopener noreferrer"
-        class="bg-[#14F195] hover:bg-[#f7be47] text-[#181818] font-bold text-4xl p-2 rounded mx-4"
+        class="bg-[#E53935] hover:bg-[#f7be47] text-white font-bold text-4xl p-2 rounded mx-4"
       >
         <TelegramIcon />
       </a>
     </div>
+    <p class="relative text-lg sm:text-xl text-center pt-10 pb-1">
+      La cucaracha, la cucaracha Ya no puede caminar Porque no tiene, porque le falta Una pata para
+      andar Una cucaracha grande Se pasea en la cocina Y la chancla de mi madre Le ha quitado una
+      patita La cucaracha, la cucaracha Ya no puede caminar Porque no tiene, porque le falta Una
+      pata para andar Esta coja cucaracha Nunca se da por vencida Y aunque le falte una pata Baila
+      siempre en la cocina Tiene tanta mala pata Esta pobre señorita Que mi padre con su chancla Le
+      ha quitado otra patita La cucaracha, la cucaracha Ya no puede caminar Porque no tiene, porque
+      le falta Las dos patitas de atrás Enfadada y muy molesta Llamó a todas sus amigas "Ay, pronto
+      haremos una fiesta En medio de la cocina" La cucaracha, la cucaracha Ya no puede caminar
+      Porque no tiene, porque le falta Las dos patitas de atrás Las cucarachas, las cucarachas Nunca
+      paran de bailar Aunque no tengan, aunque les falten Las dos patitas de atrás Se acabó.
+    </p>
   </div>
 </template>
