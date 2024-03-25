@@ -15,7 +15,7 @@ import TwitchEmbed from '@/components/TwitchEmbed.vue'
       Lets gooo! Live on
       <a
         href="https://www.pump.fun/"
-        class="text-[#E53935] hover:text-blue-700 transition duration-150 ease-in-out"
+        class="text-[#E53935] font-bold hover:text-blue-700 transition duration-150 ease-in-out"
       >
         Pump.fun
       </a>
@@ -39,17 +39,54 @@ import TwitchEmbed from '@/components/TwitchEmbed.vue'
         <TelegramIcon />
       </a>
     </div>
-    <p class="relative text-lg sm:text-xl text-center pt-10 pb-1">
-      La cucaracha, la cucaracha Ya no puede caminar Porque no tiene, porque le falta Una pata para
-      andar Una cucaracha grande Se pasea en la cocina Y la chancla de mi madre Le ha quitado una
-      patita La cucaracha, la cucaracha Ya no puede caminar Porque no tiene, porque le falta Una
-      pata para andar Esta coja cucaracha Nunca se da por vencida Y aunque le falte una pata Baila
-      siempre en la cocina Tiene tanta mala pata Esta pobre señorita Que mi padre con su chancla Le
-      ha quitado otra patita La cucaracha, la cucaracha Ya no puede caminar Porque no tiene, porque
-      le falta Las dos patitas de atrás Enfadada y muy molesta Llamó a todas sus amigas "Ay, pronto
-      haremos una fiesta En medio de la cocina" La cucaracha, la cucaracha Ya no puede caminar
-      Porque no tiene, porque le falta Las dos patitas de atrás Las cucarachas, las cucarachas Nunca
-      paran de bailar Aunque no tengan, aunque les falten Las dos patitas de atrás Se acabó.
+    <p class="relative text-white text-lg sm:text-2xl text-center pt-10 pb-1 three-d-effect">
+      La cucaracha, la cucaracha<br />
+      Ya no puede caminar<br />
+      Porque no tiene, porque le falta<br />
+      Una pata para andar<br />
+      Una cucaracha grande<br />
+      Se pasea en la cocina<br />
+      Y la chancla de mi madre<br />
+      Le ha quitado una patita<br />
+      La cucaracha, la cucaracha<br />
+      Ya no puede caminar<br />
+      Porque no tiene, porque le falta<br />
+      Una pata para andar<br />
+      Esta coja cucaracha<br />
+      Nunca se da por vencida<br />
+      Y aunque le falte una pata<br />
+      Baila siempre en la cocina<br />
+      Tiene tanta mala pata<br />
+      Esta pobre señorita<br />
+      Que mi padre con su chancla<br />
+      Le ha quitado otra patita<br />
+      La cucaracha, la cucaracha<br />
+      Ya no puede caminar<br />
+      Porque no tiene, porque le falta<br />
+      Las dos patitas de atrás<br />
+      Enfadada y muy molesta<br />
+      Llamó a todas sus amigas<br />
+      "Ay, pronto haremos una fiesta<br />
+      En medio de la cocina"<br />
+      La cucaracha, la cucaracha<br />
+      Ya no puede caminar<br />
+      Porque no tiene, porque le falta<br />
+      Las dos patitas de atrás<br />
+      Las cucarachas, las cucarachas<br />
+      Nunca paran de bailar<br />
+      Aunque no tengan, aunque les falten<br />
+      Las dos patitas de atrás<br />
+      Se acabó la cucaracha.<br />
     </p>
   </div>
 </template>
+
+<style scoped>
+.three-d-effect {
+  text-shadow:
+    1px 1px #000000,
+    2px 2px #000000,
+    3px 3px #000000;
+  /* Adjust the color and offset to your preference */
+}
+</style>
