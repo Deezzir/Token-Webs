@@ -10,7 +10,7 @@ export default defineComponent({
       isHovered: false,
       hasCopied: false,
       isNarrowScreen: false,
-      ca: '7Tt8Uoqq1NWHHEhYoe74ijKJowyAusgTptEnLUbnwkD6'
+      ca: 'Coming'
     }
   },
   created() {
