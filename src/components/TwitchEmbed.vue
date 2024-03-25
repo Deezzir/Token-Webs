@@ -16,6 +16,7 @@ export default defineComponent({
   },
   methods: {
     createTwitchEmbed() {
+      //@ts-ignore
       new Twitch.Embed('twitch-embed', {
         channel: this.channel,
         // Set other options here
