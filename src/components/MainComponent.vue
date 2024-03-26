@@ -7,14 +7,14 @@ import TwitchEmbed from '@/components/TwitchEmbed.vue'
   <div class="flex flex-col relative place-items-center">
     <TwitchEmbed channel="bobdancing" />
     <p
-      class="[word-spacing:-1px] sm:[word-spacing:0px] relative text-2xl sm:text-3xl text-center font-bold pt-10 pb-1 text-[#FFF3E0] drop-shadow-[0_3px_3px_rgba(153,69,255,0.7)]"
+      class="[word-spacing:-1px] sm:[word-spacing:0px] relative text-2xl sm:text-3xl text-center font-bold pt-10 pb-1 text-[#FFF3E0] drop-shadow-[0_3px_3px_rgba(0,0,0,1)]"
     >
       Let's make $BOBDANCE do DANCE DANCE DANCE DANCE DANCE
     </p>
     <p class="relative text-lg sm:text-2xl text-center pt-1">
       Help Bob on
       <a
-        href="https://www.pump.fun/"
+        href="https://www.pump.fun/3V5bEP8U2T6fKpCUU9UUYY2qNr91UuNjcmKzN6sernkj"
         class="text-[#E53935] font-bold hover:text-blue-700 transition duration-150 ease-in-out"
       >
         Pump.fun
@@ -83,9 +83,9 @@ import TwitchEmbed from '@/components/TwitchEmbed.vue'
 <style scoped>
 .three-d-effect {
   text-shadow:
-    1px 1px #000000,
-    2px 2px #000000,
-    3px 3px #000000;
+    1px 1px #00000088,
+    2px 2px #00000088,
+    3px 3px #00000088;
   /* Adjust the color and offset to your preference */
 }
 </style>
