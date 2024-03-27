@@ -12,7 +12,7 @@ import { TwitterIcon, TelegramIcon, PumpIcon } from '@/components/icons'
       <TwitterIcon />
     </a>
     <a
-      href="https://t.me/jewnosaurs"
+      href="https://t.me/wvwvvvvvv"
       rel="noopener noreferrer"
       class="text-[#181818] font-bold p-3 sm:p-6 rounded mx-6"
     >
