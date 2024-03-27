@@ -1,5 +1,10 @@
 <template>
-  <svg width="75" height="75" viewBox="0 0 156 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    class="sm:w-20 sm:h-20 w-12 h-12"
+    viewBox="0 0 156 156"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <path
       d="M88.9424 93.0669C89.3142 93.1134 90.3661 95.0297 90.6703 95.4859"
       stroke="black"
