@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  cursor: url('pen.png'), auto;
+  cursor: url('../public/pen.png'), auto;
 }
 
 body {
@@ -22,5 +22,5 @@ body {
 
 a,
 button {
-  cursor: url('hand.png'), pointer;
+  cursor: url('../public/hand.png'), pointer;
 }
