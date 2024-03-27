@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { TwitterIcon, TelegramIcon } from '@/components/icons'
-import exp from 'constants'
 import { defineComponent } from 'vue'
 </script>
 
