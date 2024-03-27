@@ -19,7 +19,7 @@ import { TwitterIcon, TelegramIcon, PumpIcon } from '@/components/icons'
       <TelegramIcon />
     </a>
     <a
-      href="https://pump.fun"
+      href="https://www.pump.fun/2BWBEWdwFLeB34dAnvC9SiGmLneHpWC3xuD29e5urwC9"
       rel="noopener noreferrer"
       class="text-[#181818] font-bold p-3 sm:p-6 rounded mx-6"
     >
