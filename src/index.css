@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 body {
-  color: #000000;
-  background-color: #039be5;
+  color: #ffffff;
+  background-color: #ffffff;
+  font-family: 'Mynerve', cursive;
+  font-weight: 400;
+  font-style: normal;
 }
