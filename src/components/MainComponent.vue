@@ -31,7 +31,7 @@ import DocsIcon from './icons/DocsIcon.vue'
     <p class="relative text-xl sm:text-2xl text-center pb-2">
       Support on
       <a
-        href="https://meme.sigma.zalupa.ca"
+        href="https://www.pump.fun/49LjUPSvyFei2FgsaHM9QQAVzCLakJUx5M21BnzRgXho"
         class="text-blue-500 hover:text-blue-700 transition duration-150 ease-in-out"
       >
         Pump.fun
