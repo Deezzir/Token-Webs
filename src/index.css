@@ -2,7 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  cursor: url('pen.png'), auto;
+}
+
 body {
-    color: #f7f7f7;
-    background-color: #070707;
+  color: #000000;
+  background-color: #ffffff;
+
+  font-family: 'Redacted Script', cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
 }
