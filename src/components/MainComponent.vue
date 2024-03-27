@@ -4,7 +4,7 @@ import DocsIcon from './icons/DocsIcon.vue'
 </script>
 
 <template>
-  <div class="flex flex-col relative place-items-center px-20">
+  <div class="flex flex-col relative place-items-center px-6 sm:px-20 sm:pt-10">
     <img
       alt="jewno"
       fetchpriority="high"
@@ -28,7 +28,7 @@ import DocsIcon from './icons/DocsIcon.vue'
       into the native $PUMPCLUB token. This strategy has the potential to drive continuous community
       growth and engagement.
     </p>
-    <p class="relative text-xl sm:text-2xl text-center pb-5">
+    <p class="relative text-xl sm:text-2xl text-center pb-2">
       Support on
       <a
         href="https://meme.sigma.zalupa.ca"
