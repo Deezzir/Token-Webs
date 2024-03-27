@@ -5,7 +5,7 @@ import Main from '../components/MainComponent.vue'
 </script>
 
 <template>
-  <main class="relative flex min-h-screen flex-col items-center px-12 sm:px-48">
+  <main class="relative flex min-h-screen flex-col items-center px-12 md:px-28 lg:px-44">
     <Header />
     <Main />
     <Footer />
