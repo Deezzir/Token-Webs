@@ -7,21 +7,21 @@ import { TwitterIcon, TelegramIcon, PumpIcon } from '@/components/icons'
     <a
       href="https://twitter.com/WVWVVVVVVVV"
       rel="noopener noreferrer"
-      class="text-[#181818] font-bold text-4xl p-2 rounded mx-4"
+      class="text-[#181818] font-bold p-6 rounded mx-6"
     >
       <TwitterIcon />
     </a>
     <a
       href="https://t.me/jewnosaurs"
       rel="noopener noreferrer"
-      class="text-[#181818] font-bold text-4xl p-2 rounded mx-4"
+      class="text-[#181818] font-bold p-6 rounded mx-6"
     >
       <TelegramIcon />
     </a>
     <a
       href="https://pump.fun"
       rel="noopener noreferrer"
-      class="text-[#181818] font-bold text-4xl p-2 rounded mx-4"
+      class="text-[#181818] font-bold p-6 rounded mx-6"
     >
       <PumpIcon />
     </a>
