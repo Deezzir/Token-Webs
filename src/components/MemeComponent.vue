@@ -89,9 +89,11 @@ export default defineComponent({
         <transition-group name="slide" tag="div" class="flex items-center justify-center">
           <img
             :key="current"
+            importance="high"
+            fetchpriority="high"
             :src="images[current]"
-            alt="Displayed Image"
-            class="max-w-full max-h-full rounded-xl transition-transform duration-500"
+            alt="Meme Image"
+            class="max-w-full max-h-full rounded-xl"
           />
         </transition-group>
       </div>
@@ -132,9 +134,9 @@ export default defineComponent({
 /* Transition group adjustments */
 .slide-enter-active,
 .slide-leave-active {
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 .slide-enter, .slide-leave-to /* starting and end position for enter/leave transitions */ {
-  transform: translateX(-100%);
+  transform: translateX(-150%);
 }
 </style>
