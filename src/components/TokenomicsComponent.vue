@@ -10,7 +10,7 @@ export default defineComponent({
         { text: 'MINT\u00A0\u00A0REVOKED', speed: '10s' },
         { text: 'WHOLE\u00A0\u00A0LOTTA\u00A0\u00A0SUPPLY', speed: '15s' },
         { text: 'TAX\u00A0\u00A00%', speed: '8s' },
-        { text: 'BURNT\u00A0\u00A0100% ', speed: '12s' },
+        { text: 'DEV BUY BURNT\u00A0\u00A0100% ', speed: '12s' },
         { text: 'LIQUIDITY\u00A0\u00A0LOCKED', speed: '10s' }
       ]
     }
