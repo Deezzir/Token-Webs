@@ -26,6 +26,7 @@ export default defineComponent({
       </p>
       <p class="text-2xl">Completely owned by the community</p>
       <p class="relative text-3xl sm:text-6xl text-center pt-24">Other exchanges coming soon...</p>
+      <video autoplay loop class="mt-10 w-[400px]" controls src="@/assets/eating.mp4"></video>
     </div>
   </main>
 </template>
