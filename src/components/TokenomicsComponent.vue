@@ -27,11 +27,11 @@ export default defineComponent({
 
 <template>
   <div class="flex flex-col place-items-center py-6">
-    <div class="overflow-hidden relative w-full text-5xl">
+    <div class="overflow-hidden relative w-full text-3xl sm:text-5xl">
       <div
         v-for="(item, index) in items"
         :key="index"
-        class="whitespace-nowrap moving-text tracking-wide my-8"
+        class="whitespace-nowrap moving-text tracking-wide my-4 sm:my-8"
         :style="{ animationDuration: item.speed }"
       >
         {{ getRepeatingText(item.text) }}

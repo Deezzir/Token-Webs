@@ -9,8 +9,7 @@ export default defineComponent({
     return {
       isHovered: false,
       hasCopied: false,
-      isNarrowScreen: false,
-      ca: 'Coming'
+      isNarrowScreen: false
     }
   },
   created() {
@@ -31,6 +30,9 @@ export default defineComponent({
       const start = this.ca.substring(0, 4)
       const end = this.ca.substring(this.ca.length - 4)
       return `${start}...${end}`
+    },
+    ca(): string {
+      return this.$CA
     }
   },
   methods: {
@@ -52,12 +54,17 @@ export default defineComponent({
     >
       WHAT IS <span class="btn-wrapper-text-white">$WAF</span> ?
     </p>
-    <p class="text-xl sm:text-2xl text-center py-5 w-[35%]">
-      <s class="decoration-4">CAT</s> $WAF
-      <s class="decoration-4"
-        >HAT ISNT LITERATTY A CAT WITH A WAFFLE HAT ITS NOT A DOG WIF HAT ITS NOT A BASIC CAT WIF
-        HAT ITS NOT A SHARK CAT OR BATMAN CAT ITS EVEN NOT A DOG AT ALL. ITS OUR FRESH STAR ITS
-        SYMBOL OF A NEW ERA IN FINANCE AND TECHNOLOGY.</s
+    <p class="text-xl sm:text-3xl text-center py-5 w-[90%] sm:w-[55%] tracking-wider">
+      <s class="decoration-4 decoration-[#921414]">CAT</s><b> $WAF </b>
+      <s class="decoration-4 decoration-[#921414]"> HAT ISNT LITERATTY A</s>
+      <b> CAT </b>
+      <s class="decoration-4 decoration-[#921414]"> WITH A</s><b> WAF</b
+      ><s class="decoration-4 decoration-[#921414]"
+        >FLE HAT ITS NOT A DOG WIF HAT ITS NOT A BASIC CAT WIF</s
+      ><b> HAT </b
+      ><s class="decoration-4 decoration-[#921414]"
+        >ITS NOT A SHARK CAT OR BATMAN CAT ITS EVEN NOT A DOG AT ALL. ITS OUR FRESH STAR ITS SYMBOL
+        OF A NEW ERA IN FINANCE AND TECHNOLOGY.</s
       >
     </p>
     <img
@@ -71,8 +78,11 @@ export default defineComponent({
       style="color: transparent"
       src="../assets/waf.jpg"
     />
+    <p class="text-xl sm:text-3xl text-center py-3 w-[90%] sm:w-[55%] tracking-wider">
+      this is a meme coin with a cat in a waffle hat
+    </p>
     <div class="flex flex-row items-center justify-center mt-3 text-4xl">
-      <p><b>&nbsp;Contract Adress:&nbsp;</b>{{ clampedText }}</p>
+      <p><b>&nbsp;CA:&nbsp;</b>{{ clampedText }}</p>
       <div class="relative px-2" @mouseleave="(isHovered = false), (hasCopied = false)">
         <button class="text-black" @click="copyText" @mouseover="isHovered = true">
           <CopyIcon />
