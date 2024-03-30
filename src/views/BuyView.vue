@@ -16,12 +16,12 @@ export default defineComponent({
   <main class="mx-auto mt-4 px-[6vw] pb-10 sm:px-[10vw] lg:pb-12">
     <div class="flex flex-col items-center mt-10">
       <p class="relative text-3xl sm:text-6xl text-center pt-1">
-        Help CAT WAF HAT on
+        We are live on Raydium
         <a
           :href="buyLink"
           class="text-[#385D6B] font-bold hover:text-blue-700 transition duration-150 ease-in-out"
         >
-          Pump.fun
+          Raydium
         </a>
       </p>
       <p class="text-2xl">Completely owned by the community</p>
