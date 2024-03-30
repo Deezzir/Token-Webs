@@ -15,7 +15,7 @@ export default defineComponent({
 <template>
   <main class="mx-auto mt-4 px-[6vw] pb-10 sm:px-[10vw] lg:pb-12">
     <div class="flex flex-col items-center mt-10">
-      <p class="relative text-lg sm:text-6xl text-center pt-1">
+      <p class="relative text-3xl sm:text-6xl text-center pt-1">
         Help CAT WAF HAT on
         <a
           :href="buyLink"
@@ -24,7 +24,8 @@ export default defineComponent({
           Pump.fun
         </a>
       </p>
-      <p class="relative text-lg sm:text-6xl text-center pt-24">Other exchanges coming soon...</p>
+      <p class="text-2xl">Completely owned by the community</p>
+      <p class="relative text-3xl sm:text-6xl text-center pt-24">Other exchanges coming soon...</p>
     </div>
   </main>
 </template>
