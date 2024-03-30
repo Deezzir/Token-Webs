@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    color: #f7f7f7;
-    background-color: #070707;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 }

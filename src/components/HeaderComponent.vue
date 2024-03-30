@@ -10,7 +10,7 @@ export default defineComponent({
       isHovered: false,
       hasCopied: false,
       isNarrowScreen: false,
-      ca: '49LjUPSvyFei2FgsaHM9QQAVzCLakJUx5M21BnzRgXho'
+      ca: 'Coming'
     }
   },
   created() {
@@ -23,6 +23,9 @@ export default defineComponent({
   computed: {
     clampedText(): string {
       if (!this.isNarrowScreen) {
+        return this.ca
+      }
+      if (this.ca.length <= 6) {
         return this.ca
       }
       const start = this.ca.substring(0, 4)
@@ -43,24 +46,40 @@ export default defineComponent({
 </script>
 
 <template>
-  <div
-    class="z-10 max-w-5xl w-full items-center justify-between text-2xl"
-    @mouseleave="isHovered = false"
-  >
-    <div
-      class="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit"
+  <div class="flex flex-col place-items-center px-12">
+    <p
+      class="[word-spacing:2px] sm:[word-spacing:4px] text-2xl sm:text-4xl text-center font-bold pt-10 pb-1"
     >
-      <p>
-        <b class="text-[#14F195] drop-shadow-[0_3px_3px_rgba(153,69,255,0.7)]">&nbsp;CA:&nbsp;</b
-        >{{ clampedText }}
-      </p>
+      WHAT IS <span class="btn-wrapper-text-white">$WAF</span> ?
+    </p>
+    <p class="text-xl sm:text-2xl text-center py-5 w-[35%]">
+      <s class="decoration-4">CAT</s> $WAF
+      <s class="decoration-4"
+        >HAT ISNT LITERATTY A CAT WITH A WAFFLE HAT ITS NOT A DOG WIF HAT ITS NOT A BASIC CAT WIF
+        HAT ITS NOT A SHARK CAT OR BATMAN CAT ITS EVEN NOT A DOG AT ALL. ITS OUR FRESH STAR ITS
+        SYMBOL OF A NEW ERA IN FINANCE AND TECHNOLOGY.</s
+      >
+    </p>
+    <img
+      alt="waf"
+      fetchpriority="high"
+      width="400"
+      height="400"
+      decoding="async"
+      data-nimg="1"
+      class="rounded-lg"
+      style="color: transparent"
+      src="../assets/waf.jpg"
+    />
+    <div class="flex flex-row items-center justify-center mt-3 text-4xl">
+      <p><b>&nbsp;Contract Adress:&nbsp;</b>{{ clampedText }}</p>
       <div class="relative px-2" @mouseleave="(isHovered = false), (hasCopied = false)">
-        <button @click="copyText" @mouseover="isHovered = true">
+        <button class="text-black" @click="copyText" @mouseover="isHovered = true">
           <CopyIcon />
         </button>
         <div
           v-if="isHovered"
-          class="absolute p-2 bg-gray-700 text-white text-sm rounded min-w-max whitespace-nowrap -translate-x-1/2"
+          class="absolute p-2 mt-2 bg-gray-700 text-white text-sm rounded min-w-max whitespace-nowrap -translate-x-1/2"
           style="bottom: -120%; left: 50%"
         >
           <p>{{ hasCopied ? 'Copied' : 'Copy to clipboard' }}</p>
@@ -69,3 +88,18 @@ export default defineComponent({
     </div>
   </div>
 </template>
+
+<style scoped>
+.btn-wrapper-text-white {
+  display: inline-block;
+  position: relative;
+  padding: 0px 30px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  color: #057d84;
+  transform: rotate(358deg);
+  -webkit-transform: rotate(358deg);
+  box-shadow: 5px 3px 0px 0px #057d84;
+  -webkit-box-shadow: 5px 3px 0px 0px #057d84;
+}
+</style>

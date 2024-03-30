@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import Footer from '../components/FooterComponent.vue'
-import Main from '../components/MainComponent.vue'
-import Header from '../components/HeaderComponent.vue'
+import Memes from '@/components/MemeComponent.vue'
+import Tokenomics from '@/components/TokenomicsComponent.vue'
+import Header from '@/components/HeaderComponent.vue'
 </script>
 
 <template>
-  <main class="flex min-h-screen flex-col items-center justify-between p-12 pt-36 2xl:pt-12">
+  <main class="mx-auto flex flex-col gap-10 min-h-screen mt-2 pb-10 lg:pb-12">
     <Header />
-    <Main />
-    <Footer />
+    <Memes />
+    <Tokenomics />
   </main>
 </template>
