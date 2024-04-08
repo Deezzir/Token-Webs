@@ -1,16 +1,14 @@
 <script setup lang="ts">
 import { CopyIcon } from '@/components/icons'
-import { defineComponent } from 'vue'
 </script>
 
 <script lang="ts">
-export default defineComponent({
+export default {
   data() {
     return {
       isHovered: false,
       hasCopied: false,
-      isNarrowScreen: false,
-      ca: 'Coming'
+      isNarrowScreen: false
     }
   },
   created() {
@@ -22,38 +20,39 @@ export default defineComponent({
   },
   computed: {
     clampedText(): string {
-      if (!this.isNarrowScreen) {
-        return this.ca
+      if (!this.isNarrowScreen || this.CA.length < 7) {
+        return this.CA
       }
-      const start = this.ca.substring(0, 4)
-      const end = this.ca.substring(this.ca.length - 4)
+      const start = this.CA.substring(0, 4)
+      const end = this.CA.substring(this.CA.length - 4)
       return `${start}...${end}`
+    },
+    CA(): string {
+      return this.$CA
+    },
+    buyLink(): string {
+      return this.$buyLink
     }
   },
   methods: {
     copyText() {
       this.hasCopied = true
-      navigator.clipboard.writeText(this.ca)
+      navigator.clipboard.writeText(this.CA)
     },
     checkScreenSize() {
-      this.isNarrowScreen = window.innerWidth < 768
+      this.isNarrowScreen = window.innerWidth < 40000
     }
   }
-})
+}
 </script>
 
 <template>
-  <div
-    class="z-10 max-w-5xl w-full items-center justify-between text-2xl"
-    @mouseleave="isHovered = false"
-  >
-    <div
-      class="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit"
-    >
-      <p>
-        <b class="text-[#14F195] drop-shadow-[0_3px_3px_rgba(153,69,255,0.7)]">&nbsp;CA:&nbsp;</b
-        >{{ clampedText }}
-      </p>
+  <div class="grid grid-cols-1 gap-5 h-full justify-start items-center text-2xl sm:text-3xl">
+    <h1 :href="buyLink" class="text-white text-center w-full font-bold uppercase">
+      Stop trading, start vibing
+    </h1>
+    <div @mouseleave="isHovered = false" class="flex justify-center items-center">
+      <p><b class="">&nbsp;CA:&nbsp;</b>{{ clampedText }}</p>
       <div class="relative px-2" @mouseleave="(isHovered = false), (hasCopied = false)">
         <button @click="copyText" @mouseover="isHovered = true">
           <CopyIcon />
