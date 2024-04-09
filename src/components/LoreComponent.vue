@@ -60,10 +60,10 @@ export default {
 
 <template>
   <div
-    class="flex min-h-screen items-center justify-center bg-[#384a28] px-12 py-16 text-4xl sm:text-5xl xl:px-[15rem]"
+    class="flex min-h-screen items-center justify-center bg-[#e2c100] px-12 py-16 text-4xl sm:text-5xl xl:px-[15rem]"
   >
     <div class="flex flex-col items-center justify-center gap-6">
-      <h1 class="w-full text-center font-bold uppercase text-black">$FRODO LORE</h1>
+      <h1 class="w-full text-center font-bold uppercase text-black">FRODO LORE</h1>
       <div
         id="default-carousel"
         class="flex w-full flex-col items-center justify-between gap-10 xl:flex-row"
@@ -77,7 +77,7 @@ export default {
           class="hidden cursor-pointer px-2 focus:outline-none xl:flex"
         >
           <span
-            class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-black text-white outline-none hover:bg-[#e2c100] hover:text-black"
+            class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-black text-white outline-none hover:bg-[#384a28]"
           >
             <PrevIcon />
             <span class="sr-only">Previous</span>
@@ -103,8 +103,8 @@ export default {
               v-for="(_, index) in slides"
               type="button"
               @click="currentSlide = index"
-              class="mx-3 h-4 w-4 rounded-full bg-[#e2c100] px-1 sm:mx-4 sm:h-6 sm:w-6 sm:px-3"
-              :class="{ 'bg-black': index !== currentSlide }"
+              class="mx-3 h-4 w-4 rounded-full px-1 sm:mx-4 sm:h-6 sm:w-6 sm:px-3"
+              :class="[index !== currentSlide ? 'bg-black' : 'bg-[#384a28]']"
               :aria-current="index === currentSlide"
               :aria-label="`Slide ${index + 1}`"
             ></button>
@@ -116,7 +116,7 @@ export default {
           class="hidden h-full cursor-pointer px-2 focus:outline-none xl:flex"
         >
           <span
-            class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-black text-white outline-none hover:bg-[#e2c100] hover:text-black"
+            class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-black text-white outline-none hover:bg-[#384a28]"
           >
             <NextIcon />
             <span class="sr-only">Next</span>

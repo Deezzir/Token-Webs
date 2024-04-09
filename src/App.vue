@@ -2,9 +2,10 @@
 import NavbarComponent from './components/NavbarComponent.vue'
 import Footer from './components/FooterComponent.vue'
 import MainComponent from './components/MainComponent.vue'
-import HistoryComponent from './components/HistoryComponent.vue'
+import LoreComponent from './components/LoreComponent.vue'
 import RoadmapComponent from './components/RoadmapComponent.vue'
 import TokenomicsComponent from './components/TokenomicsComponent.vue'
+import DescriptionComponent from './components/DescriptionComponent.vue'
 </script>
 
 <script lang="ts">
@@ -42,7 +43,8 @@ export default {
   <main class="relative flex flex-col">
     <NavbarComponent />
     <MainComponent />
-    <HistoryComponent />
+    <DescriptionComponent />
+    <LoreComponent />
     <RoadmapComponent />
     <TokenomicsComponent />
     <Footer class="flex-shrink-0" />

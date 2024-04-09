@@ -17,7 +17,7 @@ export default {
     <div class="flex flex-col items-center justify-center gap-24 sm:gap-12 xl:flex-row">
       <div class="flex w-full items-center justify-center">
         <button
-          class="sm:px-21 w-full rounded-3xl bg-[#68964b] px-20 py-4 font-bold shadow-lg shadow-[#384a28] sm:py-6 xl:w-[75%]"
+          class="sm:px-21 w-full rounded-3xl bg-[#384a28] px-20 py-4 font-bold text-white shadow-lg shadow-black sm:py-6 xl:w-[75%]"
         >
           <a :href="buyLink" target="_blank" rel="noopener noreferrer">BUY</a>
         </button>

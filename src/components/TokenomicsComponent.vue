@@ -48,7 +48,7 @@ export default {
 
 <template>
   <div
-    class="flex min-h-screen items-center justify-center bg-[#384a28] px-12 py-16 text-4xl sm:text-5xl xl:px-[15rem]"
+    class="flex min-h-screen items-center justify-center bg-[#e2c100] px-12 py-16 text-4xl sm:text-5xl xl:px-[15rem]"
   >
     <div class="flex h-full flex-col items-center justify-start gap-7">
       <h1 :href="buyLink" class="w-full text-center font-bold uppercase">Tokenomics</h1>
@@ -60,7 +60,7 @@ export default {
           </button>
           <div
             v-if="isHovered"
-            class="absolute min-w-max -translate-x-1/2 whitespace-nowrap rounded bg-[#e2c100] p-2 text-sm"
+            class="absolute min-w-max -translate-x-1/2 whitespace-nowrap rounded bg-[#384a28] p-2 text-lg font-bold"
             style="bottom: -100%; left: 50%"
           >
             <p>{{ hasCopied ? 'Copied' : 'Copy to clipboard' }}</p>
@@ -69,7 +69,11 @@ export default {
       </div>
       <div class="mt-8 flex w-full flex-row items-center justify-center gap-10">
         <img src="@/assets/leaves.png" alt="Leaves" class="w-[90%] sm:w-[35%]" />
-        <img src="@/assets/goup.gif" alt="Tokenomics" class="w-[90%] rounded-xl sm:w-[45%]" />
+        <img
+          src="@/assets/goup.gif"
+          alt="Tokenomics"
+          class="w-[90%] rounded-xl border-2 border-black sm:w-[45%]"
+        />
         <img src="@/assets/leaves.png" alt="Leaves" class="w-[90%] scale-x-[-1] sm:w-[35%]" />
       </div>
       <h2 class="w-full text-center font-bold uppercase">ONLY UP...</h2>

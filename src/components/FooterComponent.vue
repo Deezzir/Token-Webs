@@ -22,7 +22,9 @@ export default {
 </script>
 
 <template>
-  <footer class="bg-black py-2 text-center text-white backdrop-blur transition-colors duration-500">
+  <footer
+    class="bg-[#384a28] py-2 text-center text-white backdrop-blur transition-colors duration-500"
+  >
     <p class="flex flex-row items-center justify-center gap-2">
       <span class="text-sm sm:text-xl">$FRODO &copy; 2024</span>
       <span class="inline-flex">
