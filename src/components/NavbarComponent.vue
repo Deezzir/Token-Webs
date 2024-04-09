@@ -21,7 +21,7 @@ export default {
 <template>
   <nav class="bg-[#e2c100] absolute top-0 left-1/2 transform -translate-x-1/2 z-10 w-full">
     <div
-      class="m-auto flex justify-between items-center py-6 px-8 sm:px-24 bg-[#68964b] shadow-md rounded-br-2xl rounded-bl-2xl w-full md:w-[65%]"
+      class="m-auto flex justify-between items-center py-6 px-8 sm:px-24 bg-[#68964b] shadow-md rounded-br-3xl rounded-bl-3xl w-full md:w-[65%]"
     >
       <div>
         <h1 class="flex flex-row items-center text-3xl sm:text-5xl font-bold uppercase">
