@@ -47,22 +47,24 @@ export default {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 gap-5 h-full justify-start items-center text-2xl sm:text-3xl">
-    <h1 :href="buyLink" class="text-white text-center w-full font-bold uppercase">
-      Stop trading, start vibing
-    </h1>
-    <div @mouseleave="isHovered = false" class="flex justify-center items-center">
-      <p><b class="">&nbsp;CA:&nbsp;</b>{{ clampedText }}</p>
-      <div class="relative px-2" @mouseleave="(isHovered = false), (hasCopied = false)">
-        <button @click="copyText" @mouseover="isHovered = true">
-          <CopyIcon />
-        </button>
-        <div
-          v-if="isHovered"
-          class="absolute p-2 bg-gray-700 text-white text-sm rounded min-w-max whitespace-nowrap -translate-x-1/2"
-          style="bottom: -120%; left: 50%"
-        >
-          <p>{{ hasCopied ? 'Copied' : 'Copy to clipboard' }}</p>
+  <div class="min-h-screen">
+    <div class="grid grid-cols-1 gap-5 h-full justify-start items-center text-2xl sm:text-3xl">
+      <h1 :href="buyLink" class="text-white text-center w-full font-bold uppercase">
+        Stop trading, start vibing
+      </h1>
+      <div @mouseleave="isHovered = false" class="flex justify-center items-center">
+        <p><b class="">&nbsp;CA:&nbsp;</b>{{ clampedText }}</p>
+        <div class="relative px-2" @mouseleave="(isHovered = false), (hasCopied = false)">
+          <button @click="copyText" @mouseover="isHovered = true">
+            <CopyIcon />
+          </button>
+          <div
+            v-if="isHovered"
+            class="absolute p-2 bg-gray-700 text-white text-sm rounded min-w-max whitespace-nowrap -translate-x-1/2"
+            style="bottom: -120%; left: 50%"
+          >
+            <p>{{ hasCopied ? 'Copied' : 'Copy to clipboard' }}</p>
+          </div>
         </div>
       </div>
     </div>

@@ -3,7 +3,6 @@
     width="193"
     height="193"
     viewBox="0 0 193 193"
-    class="h-10 w-10 sm:h-8 sm:w-8"
     fill="currentColor"
     aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"

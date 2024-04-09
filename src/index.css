@@ -10,10 +10,11 @@
   }
 
   body {
-    color: #ffffff;
+    color: #000000;
     background-color: #000000;
-    font-family: 'Nokora', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
     font-weight: 400;
+    word-spacing: normal;
     font-style: normal;
   }
 }
