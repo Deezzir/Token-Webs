@@ -9,6 +9,18 @@ import TokenomicsComponent from './components/TokenomicsComponent.vue'
 
 <script lang="ts">
 export default {
+  data() {
+    return {
+      ribbits: [
+        '/ribbit1.mp3',
+        '/ribbit2.mp3',
+        '/ribbit3.mp3',
+        '/ribbit4.mp3',
+        '/ribbit5.mp3',
+        '/ribbit6.mp3'
+      ]
+    }
+  },
   created() {
     window.addEventListener('click', this.playAudio)
   },
@@ -19,6 +31,7 @@ export default {
     playAudio() {
       const audio = document.getElementById('audio') as HTMLAudioElement
       audio.currentTime = 0
+      audio.src = this.ribbits[Math.floor(Math.random() * this.ribbits.length)]
       audio.play()
     }
   }
@@ -26,13 +39,13 @@ export default {
 </script>
 
 <template>
-  <main class="flex flex-col relative">
+  <main class="relative flex flex-col">
     <NavbarComponent />
     <MainComponent />
     <HistoryComponent />
     <RoadmapComponent />
     <TokenomicsComponent />
     <Footer class="flex-shrink-0" />
-    <audio hidden id="audio" src="/ribbit.mp3"></audio>
+    <audio hidden id="audio"></audio>
   </main>
 </template>

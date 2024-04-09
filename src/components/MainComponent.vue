@@ -12,7 +12,7 @@ export default {
 
 <template>
   <div
-    class="flex min-h-screen flex-col justify-between bg-[#e2c100] px-12 pb-0 pt-32 text-3xl sm:px-[20rem] sm:pt-36 sm:text-5xl 2xl:pt-52 2xl:text-5xl"
+    class="flex min-h-screen flex-col justify-between bg-[#e2c100] px-12 pb-0 pt-32 text-3xl sm:px-[20rem] sm:pt-36 sm:text-5xl 2xl:pt-52"
   >
     <div class="flex flex-col items-center justify-center gap-24 sm:gap-12 xl:flex-row">
       <div class="flex w-full items-center justify-center">
@@ -30,12 +30,14 @@ export default {
     </div>
     <div class="mt-12 flex h-full flex-col-reverse items-center justify-center gap-10 xl:flex-row">
       <div class="w-full">
-        <img src="@/assets/frodo.png" alt="Frodo" class="w-[90%] 2xl:w-[65%]" />
+        <img src="@/assets/frodo.png" alt="Frodo" class="w-[90%] 2xl:w-[75%]" />
       </div>
       <div class="w-full">
-        <div class="mb-12 flex flex-col items-center justify-center gap-10">
+        <div class="mb-10 flex flex-col items-center justify-center gap-5">
           <img src="@/assets/family.png" alt="Family" class="w-[90%] 2xl:w-[65%]" />
-          <p class="text-center font-bold text-black">WELCOME TO FRODO UNIVERSE</p>
+          <p class="text-center text-2xl font-bold text-black sm:text-4xl">
+            WELCOME TO FRODO UNIVERSE
+          </p>
         </div>
       </div>
     </div>

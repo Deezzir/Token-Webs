@@ -47,26 +47,32 @@ export default {
 </script>
 
 <template>
-  <div class="min-h-screen">
-    <div class="grid grid-cols-1 gap-5 h-full justify-start items-center text-2xl sm:text-3xl">
-      <h1 :href="buyLink" class="text-white text-center w-full font-bold uppercase">
-        Stop trading, start vibing
-      </h1>
-      <div @mouseleave="isHovered = false" class="flex justify-center items-center">
+  <div
+    class="flex min-h-screen items-center justify-center bg-[#384a28] px-12 py-16 text-4xl sm:text-5xl xl:px-[15rem]"
+  >
+    <div class="flex h-full flex-col items-center justify-start gap-7">
+      <h1 :href="buyLink" class="w-full text-center font-bold uppercase">Tokenomics</h1>
+      <div @mouseleave="isHovered = false" class="flex items-center justify-center">
         <p><b class="">&nbsp;CA:&nbsp;</b>{{ clampedText }}</p>
-        <div class="relative px-2" @mouseleave="(isHovered = false), (hasCopied = false)">
+        <div class="relative px-4" @mouseleave="(isHovered = false), (hasCopied = false)">
           <button @click="copyText" @mouseover="isHovered = true">
             <CopyIcon />
           </button>
           <div
             v-if="isHovered"
-            class="absolute p-2 bg-gray-700 text-white text-sm rounded min-w-max whitespace-nowrap -translate-x-1/2"
-            style="bottom: -120%; left: 50%"
+            class="absolute min-w-max -translate-x-1/2 whitespace-nowrap rounded bg-[#e2c100] p-2 text-sm"
+            style="bottom: -100%; left: 50%"
           >
             <p>{{ hasCopied ? 'Copied' : 'Copy to clipboard' }}</p>
           </div>
         </div>
       </div>
+      <div class="mt-8 flex w-full flex-row items-center justify-center gap-10">
+        <img src="@/assets/leaves.png" alt="Leaves" class="w-[90%] sm:w-[35%]" />
+        <img src="@/assets/goup.gif" alt="Tokenomics" class="w-[90%] rounded-xl sm:w-[45%]" />
+        <img src="@/assets/leaves.png" alt="Leaves" class="w-[90%] scale-x-[-1] sm:w-[35%]" />
+      </div>
+      <h2 class="w-full text-center font-bold uppercase">ONLY UP...</h2>
     </div>
   </div>
 </template>

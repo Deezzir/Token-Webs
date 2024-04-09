@@ -6,5 +6,6 @@ declare module '@vue/runtime-core' {
         $telegram: string;
         $buyLink: string;
         $CA: string;
+        $telegramDev: string;
     }
 }

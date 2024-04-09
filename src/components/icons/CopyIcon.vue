@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
-    class="h-8 w-8 sm:h-6 sm:w-6"
+    class="h-8 w-8 sm:h-10 sm:w-10"
     fill="currentColor"
     aria-hidden="true"
   >
