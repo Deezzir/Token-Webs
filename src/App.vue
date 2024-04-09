@@ -18,6 +18,7 @@ export default {
   methods: {
     playAudio() {
       const audio = document.getElementById('audio') as HTMLAudioElement
+      audio.currentTime = 0
       audio.play()
     }
   }

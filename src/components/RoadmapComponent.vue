@@ -1,7 +1,9 @@
 <template>
   <div
-    class="min-h-screen bg-[#e2c100] px-12 pt-36 sm:px-[18rem] sm:pt-48 pb-12 sm:pb-0 relative text-3xl sm:text-5xl"
+    class="flex min-h-screen items-center justify-center bg-[#e2c100] px-12 py-16 text-4xl sm:text-5xl xl:px-[15rem]"
   >
-    <h1>Roadmap</h1>
+    <div class="flex w-full items-center justify-center">
+      <img src="@/assets/map.png" alt="Roadmap" class="w-[90%] sm:w-[50%]" />
+    </div>
   </div>
 </template>

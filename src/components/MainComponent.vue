@@ -12,30 +12,30 @@ export default {
 
 <template>
   <div
-    class="min-h-screen bg-[#e2c100] px-12 pt-36 sm:px-[18rem] sm:pt-48 pb-12 sm:pb-0 relative text-3xl sm:text-5xl"
+    class="flex min-h-screen flex-col justify-between bg-[#e2c100] px-12 pb-0 pt-32 text-3xl sm:px-[20rem] sm:pt-36 sm:text-5xl 2xl:pt-52 2xl:text-5xl"
   >
-    <div class="flex sm:flex-row flex-col justify-center items-center gap-6">
-      <div class="w-full flex items-center justify-center">
+    <div class="flex flex-col items-center justify-center gap-24 sm:gap-12 xl:flex-row">
+      <div class="flex w-full items-center justify-center">
         <button
-          class="bg-[#68964b] font-bold py-4 sm:py-6 px-24 sm:px-36 rounded-3xl shadow-lg shadow-[#384a28]"
+          class="sm:px-21 w-full rounded-3xl bg-[#68964b] px-20 py-4 font-bold shadow-lg shadow-[#384a28] sm:py-6 xl:w-[75%]"
         >
           <a :href="buyLink" target="_blank" rel="noopener noreferrer">BUY</a>
         </button>
       </div>
       <div class="w-full">
-        <h1 class="font-bold text-black uppercase text-center">
+        <h1 class="text-center font-bold uppercase text-black">
           Its not a pepe frog but its not a dog - its frodo
         </h1>
       </div>
     </div>
-    <div class="flex sm:flex-row flex-col justify-center items-center gap-10 mt-12">
+    <div class="mt-12 flex h-full flex-col-reverse items-center justify-center gap-10 xl:flex-row">
       <div class="w-full">
-        <img src="@/assets/frodo.png" alt="Frodo" class="w-[90%]" />
+        <img src="@/assets/frodo.png" alt="Frodo" class="w-[90%] 2xl:w-[65%]" />
       </div>
       <div class="w-full">
-        <div class="flex flex-col justify-center items-center gap-10">
-          <img src="@/assets/family.png" alt="Family" class="w-[90%]" />
-          <p class="text-black font-bold text-center">WELCOME TO FRODO UNIVERSE</p>
+        <div class="mb-12 flex flex-col items-center justify-center gap-10">
+          <img src="@/assets/family.png" alt="Family" class="w-[90%] 2xl:w-[65%]" />
+          <p class="text-center font-bold text-black">WELCOME TO FRODO UNIVERSE</p>
         </div>
       </div>
     </div>

@@ -19,28 +19,28 @@ export default {
 </script>
 
 <template>
-  <nav class="bg-[#e2c100] absolute top-0 left-1/2 transform -translate-x-1/2 z-10 w-full">
+  <nav class="absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 transform bg-[#e2c100]">
     <div
-      class="m-auto flex justify-between items-center py-6 px-8 sm:px-24 bg-[#68964b] shadow-md rounded-br-3xl rounded-bl-3xl w-full md:w-[65%]"
+      class="m-auto flex items-center justify-between rounded-bl-3xl rounded-br-3xl bg-[#68964b] px-8 py-4 shadow-md sm:px-48"
     >
       <div>
-        <h1 class="flex flex-row items-center text-3xl sm:text-5xl font-bold uppercase">
-          <span class="inline-flex justify-center items-center mr-2">
-            <img src="@/assets/icon.png" alt="Frodo" class="w-16 sm:w-24 inline-block" />
+        <h1 class="flex flex-row items-center text-3xl font-bold uppercase sm:text-5xl">
+          <span class="mr-2 inline-flex items-center justify-center">
+            <img src="@/assets/icon.png" alt="Frodo" class="inline-block w-16 sm:w-24" />
           </span>
           Frodo
         </h1>
       </div>
       <div>
         <span class="inline-flex">
-          <a :href="twitter" rel="noopener noreferrer" class="font-bold p-2 rounded mx-1">
-            <TwitterIcon class="w-8 h-8 sm:w-12 sm:h-12" />
+          <a :href="twitter" rel="noopener noreferrer" class="mx-1 rounded p-1 font-bold sm:p-2">
+            <TwitterIcon class="h-6 w-6 sm:h-12 sm:w-12" />
           </a>
-          <a :href="telegram" rel="noopener noreferrer" class="font-bold p-2 rounded mx-1">
-            <TelegramIcon class="w-8 h-8 sm:w-12 sm:h-12" />
+          <a :href="telegram" rel="noopener noreferrer" class="mx-1 rounded p-1 font-bold sm:p-2">
+            <TelegramIcon class="h-6 w-6 sm:h-12 sm:w-12" />
           </a>
-          <a :href="buyLink" rel="noopener noreferrer" class="font-bold p-2 rounded mx-1">
-            <PumpIcon class="w-8 h-8 sm:w-12 sm:h-12" />
+          <a :href="buyLink" rel="noopener noreferrer" class="mx-1 rounded p-1 font-bold sm:p-2">
+            <PumpIcon class="h68 w-6 sm:h-12 sm:w-12" />
           </a>
         </span>
       </div>
