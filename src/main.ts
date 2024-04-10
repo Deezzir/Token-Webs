@@ -10,6 +10,6 @@ app.config.globalProperties.$telegram = 'https://t.me/frodo_frogdog'
 app.config.globalProperties.$twitter = 'https://twitter.com/FRODOTHEFROGDOG'
 app.config.globalProperties.$buyLink = 'https://pump.fun/DA4EQzj6GHgAS7i9ffia1c35NyHqqrnHdfp9A55HZuVq'
 app.config.globalProperties.$telegramDev = 'https://t.me/lettodev'
-app.config.globalProperties.$dex = 'https://dexscreener.com/solana/DA4EQzj6GHgAS7i9ffia1c35NyHqqrnHdfp9A55HZuVq'
+app.config.globalProperties.$dex = 'https://dexscreener.com/solana/2xCGqSn86Y2Ziba7sR6Nd2G5HqaYtFfL5NhpvwsyKc9R'
 
 app.mount('#app')
