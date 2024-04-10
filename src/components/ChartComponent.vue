@@ -19,7 +19,7 @@ export default {
         <a :href="buyLink" class="w-[80%] text-center sm:w-[30%]">
           <img src="@/assets/bag.png" alt="Bag" class="w-full" />
           <h1
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-4xl font-bold uppercase sm:text-5xl"
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 transform text-4xl font-bold uppercase sm:text-5xl"
           >
             Buy
           </h1>
