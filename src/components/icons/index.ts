@@ -6,3 +6,4 @@ export { default as PrevIcon } from './PrevIcon.vue';
 export { default as NextIcon } from './NextIcon.vue';
 export { default as DevIcon } from './DevIcon.vue';
 export { default as DexIcon } from './DexIcon.vue';
+export { default as RaydiumIcon } from './RaydiumIcon.vue';
