@@ -12,8 +12,8 @@ export default {
     telegram(): string {
       return this.$telegram
     },
-    buyLink(): string {
-      return this.$buyLink
+    raydium(): string {
+      return this.$raydium
     },
     dexLink(): string {
       return this.$dex
@@ -43,7 +43,7 @@ export default {
           <a :href="telegram" rel="noopener noreferrer" class="mx-1 rounded p-1 font-bold sm:p-2">
             <TelegramIcon class="h-6 w-6 text-white sm:h-12 sm:w-12" />
           </a>
-          <a :href="buyLink" rel="noopener noreferrer" class="mx-1 rounded p-1 font-bold sm:p-2">
+          <a :href="raydium" rel="noopener noreferrer" class="mx-1 rounded p-1 font-bold sm:p-2">
             <RaydiumIcon class="h68 w-6 text-white sm:h-12 sm:w-12" />
           </a>
           <a :href="dexLink" rel="noopener noreferrer" class="mx-1 rounded p-1 font-bold sm:p-2">
