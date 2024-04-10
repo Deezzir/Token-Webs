@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { TwitterIcon, TelegramIcon, PumpIcon } from '@/components/icons'
+import DexIcon from './icons/DexIcon.vue'
 </script>
 
 <script lang="ts">
@@ -13,6 +14,9 @@ export default {
     },
     buyLink(): string {
       return this.$buyLink
+    },
+    dexLink(): string {
+      return this.$dex
     }
   }
 }
@@ -41,6 +45,9 @@ export default {
           </a>
           <a :href="buyLink" rel="noopener noreferrer" class="mx-1 rounded p-1 font-bold sm:p-2">
             <PumpIcon class="h68 w-6 text-white sm:h-12 sm:w-12" />
+          </a>
+          <a :href="dexLink" rel="noopener noreferrer" class="mx-1 rounded p-1 font-bold sm:p-2">
+            <DexIcon class="h68 w-6 text-white sm:h-12 sm:w-12" />
           </a>
         </span>
       </div>

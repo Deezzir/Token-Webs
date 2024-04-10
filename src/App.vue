@@ -6,6 +6,7 @@ import LoreComponent from './components/LoreComponent.vue'
 import RoadmapComponent from './components/RoadmapComponent.vue'
 import TokenomicsComponent from './components/TokenomicsComponent.vue'
 import DescriptionComponent from './components/DescriptionComponent.vue'
+import ChartComponent from './components/ChartComponent.vue'
 </script>
 
 <script lang="ts">
@@ -47,6 +48,7 @@ export default {
     <LoreComponent />
     <RoadmapComponent />
     <TokenomicsComponent />
+    <ChartComponent />
     <Footer class="flex-shrink-0" />
     <audio hidden id="audio"></audio>
   </main>

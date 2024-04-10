@@ -67,16 +67,18 @@ export default {
           </div>
         </div>
       </div>
-      <div class="mt-8 flex w-full flex-row items-center justify-center gap-10">
+      <div class="mt-8 flex w-full flex-col items-center justify-center gap-10 xl:flex-row">
         <img src="@/assets/leaves.png" alt="Leaves" class="w-[90%] sm:w-[35%]" />
-        <img
-          src="@/assets/goup.gif"
-          alt="Tokenomics"
-          class="w-[90%] rounded-xl border-2 border-black sm:w-[45%]"
-        />
+        <div class="flex flex-col items-center justify-center gap-10">
+          <img
+            src="@/assets/goup.gif"
+            alt="Tokenomics"
+            class="w-[90%] rounded-xl border-4 border-black"
+          />
+          <h2 class="w-full text-center font-bold uppercase">ONLY UP...</h2>
+        </div>
         <img src="@/assets/leaves.png" alt="Leaves" class="w-[90%] scale-x-[-1] sm:w-[35%]" />
       </div>
-      <h2 class="w-full text-center font-bold uppercase">ONLY UP...</h2>
     </div>
   </div>
 </template>
