@@ -39,9 +39,9 @@ export default {
         </a>
       </span>
     </p>
-    <p class="px-2">
+    <p class="px-2 text-sm">
       $FRODO is a memecoin with no intrinsic value, and is not a investment and simply a
-      community/culture token similar to $pepe. No Promises, No Utility, Purely For Entertainment
+      community/culture token similar to $FRODO. No Promises, No Utility, Purely For Entertainment
       Purposes
     </p>
   </footer>

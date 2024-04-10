@@ -4,7 +4,7 @@
   >
     <div class="flex flex-col items-center justify-center gap-16">
       <h1 class="text-center font-bold uppercase">Chart and Buy Links coming...</h1>
-      <img src="@/assets/bag.png" alt="Bag" class="w-[80%] sm:w-[40%]" />
+      <img src="@/assets/bag.png" alt="Bag" class="w-[80%] sm:w-[60%]" />
     </div>
   </div>
 </template>

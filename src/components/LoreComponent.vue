@@ -10,19 +10,28 @@ export default {
       currentSlide: 0,
       slides: [
         {
-          image: '/card5.png'
-        },
-        {
-          image: '/card4.png'
-        },
-        {
-          image: '/card3.png'
+          image: '/card1.png'
         },
         {
           image: '/card2.png'
         },
         {
-          image: '/card1.png'
+          image: '/card3.png'
+        },
+        {
+          image: '/card4.png'
+        },
+        {
+          image: '/card5.png'
+        },
+        {
+          image: '/card6.png'
+        },
+        {
+          image: '/card7.png'
+        },
+        {
+          image: '/card8.png'
         }
       ],
       touchStartX: 0,
@@ -103,8 +112,8 @@ export default {
               v-for="(_, index) in slides"
               type="button"
               @click="currentSlide = index"
-              class="mx-3 h-4 w-4 rounded-full px-1 sm:mx-4 sm:h-6 sm:w-6 sm:px-3"
-              :class="[index !== currentSlide ? 'bg-black' : 'bg-[#384a28]']"
+              class="mx-2 h-3 w-3 rounded-full px-1 sm:h-4 sm:w-4 sm:px-2"
+              :class="[index !== currentSlide ? 'bg-white' : 'bg-black']"
               :aria-current="index === currentSlide"
               :aria-label="`Slide ${index + 1}`"
             ></button>

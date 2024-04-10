@@ -54,7 +54,7 @@
         <p
           class="row-start-9 text-center xl:col-start-3 xl:row-start-3 xl:translate-x-[7.5rem] xl:text-left"
         >
-          8. MAKE DARKFARMS (THIRD BOSS) TWEET
+          8. MAKE DARKFARMS TWEET (THIRD BOSS)
         </p>
         <p
           class="row-start-10 text-center xl:col-start-3 xl:row-start-4 xl:translate-x-[3.3rem] xl:text-left"
