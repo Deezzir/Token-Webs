@@ -75,9 +75,11 @@ export default {
       <h1 class="w-full text-center font-bold uppercase text-black">FRODO LORE</h1>
       <div
         id="default-carousel"
-        class="flex w-full flex-col items-center justify-between gap-10 xl:flex-row"
+        class="mt-10 flex w-full flex-col items-center justify-between gap-16 xl:flex-row"
       >
-        <div class="flex h-[12vh] w-[30vw] items-center justify-center xl:h-[40vh] xl:w-[12vw]">
+        <div
+          class="flex h-[12vh] w-[30vw] items-center justify-center md:h-[12vh] md:w-[20vw] xl:h-[40vh] xl:w-[12vw]"
+        >
           <img src="@/assets/food.png" alt="Food" class="w-full" />
         </div>
         <button
@@ -131,7 +133,9 @@ export default {
             <span class="sr-only">Next</span>
           </span>
         </button>
-        <div class="flex h-[12vh] w-[30vw] items-center justify-center xl:h-[40vh] xl:w-[12vw]">
+        <div
+          class="flex h-[12vh] w-[30vw] items-center justify-center md:h-[12vh] md:w-[20vw] xl:h-[40vh] xl:w-[12vw]"
+        >
           <img src="@/assets/bone.png" alt="Bone" class="w-1/2 rotate-90 xl:h-full xl:rotate-0" />
         </div>
       </div>

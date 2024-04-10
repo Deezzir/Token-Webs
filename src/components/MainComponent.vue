@@ -16,11 +16,14 @@ export default {
   >
     <div class="flex flex-col items-center justify-center gap-24 sm:gap-12 xl:flex-row">
       <div class="flex w-full items-center justify-center">
-        <button
-          class="sm:px-21 w-full rounded-3xl bg-[#384a28] px-20 py-4 font-bold text-white shadow-lg shadow-black hover:bg-[#2b3c1f] sm:py-6 xl:w-[75%]"
+        <a
+          :href="buyLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="sm:px-21 w-full rounded-3xl bg-[#384a28] px-20 py-4 text-center font-bold text-white shadow-lg shadow-black hover:bg-[#2b3c1f] sm:py-6 xl:w-[75%]"
         >
-          <a :href="buyLink" target="_blank" rel="noopener noreferrer">BUY</a>
-        </button>
+          BUY
+        </a>
       </div>
       <div class="w-full">
         <h1 class="text-center font-bold uppercase text-black">
