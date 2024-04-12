@@ -12,19 +12,9 @@ export default {
 
 <template>
   <div
-    class="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#384a28] px-12 py-12 text-4xl text-white sm:text-5xl xl:px-[15rem]"
+    class="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#0166B0] px-12 py-12 text-4xl text-white sm:text-5xl xl:px-[15rem]"
   >
     <div class="flex w-full flex-col items-center justify-center gap-2">
-      <div class="relative flex w-full flex-col items-center justify-center">
-        <a :href="buyLink" class="w-[80%] text-center sm:w-[30%]">
-          <img src="@/assets/bag.png" alt="Bag" class="w-full" />
-          <h1
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 transform text-4xl font-bold uppercase sm:text-5xl"
-          >
-            Buy
-          </h1>
-        </a>
-      </div>
       <div id="dexscreener-embed" class="">
         <iframe
           src="https://dexscreener.com/solana/2xCGqSn86Y2Ziba7sR6Nd2G5HqaYtFfL5NhpvwsyKc9R?embed=1&theme=dark&trades=0"

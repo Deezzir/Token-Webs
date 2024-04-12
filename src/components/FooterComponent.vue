@@ -23,7 +23,7 @@ export default {
 
 <template>
   <footer
-    class="bg-[#e2c100] py-2 text-center text-black backdrop-blur transition-colors duration-500"
+    class="bg-[#FDEA33] py-2 text-center text-black backdrop-blur transition-colors duration-500"
   >
     <p class="flex flex-row items-center justify-center gap-2">
       <span class="text-sm font-bold sm:text-xl">$FRODO &copy; 2024</span>

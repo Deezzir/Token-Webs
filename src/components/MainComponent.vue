@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { PlayIcon } from './icons'
+</script>
 
 <script lang="ts">
 export default {
@@ -12,36 +14,30 @@ export default {
 
 <template>
   <div
-    class="flex min-h-screen flex-col justify-between bg-[#e2c100] px-12 pb-0 pt-32 text-3xl sm:px-[20rem] sm:pt-36 sm:text-5xl 2xl:pt-52"
+    class="relative flex min-h-screen flex-col justify-between bg-[#0166B0] px-12 py-32 text-3xl sm:px-48 sm:py-36 sm:text-5xl"
   >
-    <div class="flex flex-col items-center justify-center gap-24 sm:gap-12 xl:flex-row">
-      <div class="flex w-full items-center justify-center">
-        <a
-          :href="buyLink"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="sm:px-21 w-full rounded-3xl bg-[#384a28] px-20 py-4 text-center font-bold text-white shadow-lg shadow-black hover:bg-[#2b3c1f] sm:py-6 xl:w-[75%]"
-        >
-          BUY
-        </a>
-      </div>
-      <div class="w-full">
-        <h1 class="text-center font-bold uppercase text-black">
-          It's not a pepe frog, but its not a dog - it's frodo
-        </h1>
-      </div>
-    </div>
-    <div class="mt-12 flex h-full flex-col-reverse items-center justify-center gap-10 xl:flex-row">
-      <div class="w-full">
-        <img src="@/assets/frodo.png" alt="Frodo" class="w-[90%] 2xl:w-[75%]" />
-      </div>
-      <div class="w-full">
-        <div class="mb-10 flex flex-col items-center justify-center gap-5">
-          <img src="@/assets/family.png" alt="Family" class="w-[90%] 2xl:w-[65%]" />
-          <p class="text-center text-2xl font-bold text-black sm:text-4xl">
-            WELCOME TO FRODO UNIVERSE
-          </p>
+    <div class="flex grow items-center">
+      <div class="z-10 flex w-1/2 flex-col items-start justify-center gap-4">
+        <h3 class="">Lorem ipsum dolor sit amet</h3>
+        <h1 class="text-6xl font-bold uppercase">Lorem ipsum dolor sit amet</h1>
+        <div class="flex flex-row items-center justify-start gap-6">
+          <a class="rounded-xl bg-white px-7 py-4 text-center text-2xl uppercase text-orange-500"
+            >EXPLORE</a
+          >
+          <a
+            class="inline-flex items-center justify-center rounded-full border-2 border-white bg-transparent p-4"
+            ><PlayIcon class="h-7 w-7 text-white"
+          /></a>
+          <p>How to get in?</p>
         </div>
+      </div>
+      <div>
+        <img src="@/assets/bg.png" alt="Background" class="absolute right-0 top-0 z-0 h-[100vh]" />
+        <img
+          src="@/assets/vaultbasic.png"
+          alt="Vault Basic"
+          class="absolute right-0 top-0 z-0 h-[85vh] -translate-x-1/2 translate-y-[5%]"
+        />
       </div>
     </div>
   </div>
