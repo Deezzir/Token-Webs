@@ -12,10 +12,16 @@ export default {
 
 <template>
   <div
-    class="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#0166B0] px-12 py-16 text-4xl text-white sm:px-36 sm:text-5xl"
+    class="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#0166B0] px-8 py-12 text-4xl text-white md:px-36 md:text-5xl"
   >
     <div class="flex w-full flex-col items-center justify-center gap-2">
-      <h2 class="uppercase">- CHART AND BUY LINKS COMING -</h2>
+      <h2 class="text-center font-bold uppercase">
+        <span class="hidden md:block">- </span>CHART AND BUY LINKS COMING<span
+          class="hidden md:block"
+        >
+          -</span
+        >
+      </h2>
       <!-- <div id="dexscreener-embed" class="">
         <iframe
           src="https://dexscreener.com/solana/2xCGqSn86Y2Ziba7sR6Nd2G5HqaYtFfL5NhpvwsyKc9R?embed=1&theme=dark&trades=0"

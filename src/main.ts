@@ -9,7 +9,7 @@ app.config.globalProperties.$CA = 'Coming'
 app.config.globalProperties.$telegram = 'Coming'
 app.config.globalProperties.$twitter = 'Coming'
 app.config.globalProperties.$buyLink = 'Coming'
-app.config.globalProperties.$telegramDev = 'Coming'
+app.config.globalProperties.$telegramDev = 'https://t.me/lettodev'
 app.config.globalProperties.$dex = 'Coming'
 app.config.globalProperties.$raydium = 'Coming'
 

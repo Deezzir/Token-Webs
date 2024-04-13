@@ -63,30 +63,34 @@ export default {
 
 <template>
   <div
-    class="flex min-h-screen items-center justify-center bg-[#0166B0] px-12 py-16 text-4xl sm:px-36 sm:text-5xl"
+    class="flex min-h-screen items-center justify-center bg-[#0166B0] px-8 py-12 text-4xl md:px-36 md:text-5xl"
   >
     <div class="flex w-full flex-col items-center justify-center gap-[4rem]">
-      <div class="flex grow flex-row items-center justify-center">
-        <div class="w-[20vw]">
+      <div class="flex grow flex-col items-center justify-center gap-10 md:flex-row">
+        <div class="w-full md:w-[20vw]">
           <img src="@/assets/pippump.png" alt="Pip Pump" class="w-full" />
         </div>
-        <h2 class="font-bold uppercase">- HOW WOULD IT WORK -</h2>
-        <div class="w-[20vw]">
+        <h2 class="text-center font-bold uppercase">
+          <span class="hidden md:block">- </span>HOW WOULD IT WORK<span class="hidden md:block">
+            -</span
+          >
+        </h2>
+        <div class="w-full md:w-[20vw]">
           <img src="@/assets/pipsol.png" alt="Pip Sol" class="w-full" />
         </div>
       </div>
-      <div class="mt-12 flex flex-row gap-10 text-black">
+      <div class="mt-12 flex flex-col gap-10 text-black md:flex-row">
         <div
           v-for="(card, index) in cards"
           :key="index"
-          class="sha relative flex flex-col items-center justify-center gap-4 rounded-xl bg-white p-10 shadow-md shadow-black"
+          class="relative flex flex-col items-center justify-center gap-4 rounded-xl bg-white p-10 shadow-md shadow-black"
         >
           <span class="absolute top-0 -translate-y-1/2 rounded-xl bg-[#FDEA33] px-20 py-4"></span>
           <h3 class="mt-12 text-3xl font-bold uppercase">{{ card.title }}</h3>
           <p class="text-center text-2xl">
             {{ card.description }}
           </p>
-          <ArrowIcon class="h-8 w-8 sm:h-12 sm:w-12" />
+          <ArrowIcon class="h-8 w-8 md:h-12 md:w-12" />
         </div>
       </div>
       <div>

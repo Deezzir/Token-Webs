@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import { PlayIcon } from './icons'
-</script>
+<script setup lang="ts"></script>
 
 <script lang="ts">
 export default {
@@ -14,24 +12,32 @@ export default {
 
 <template>
   <div
-    class="relative flex min-h-screen flex-col justify-between bg-[#0166B0] px-12 py-16 text-3xl sm:px-36 sm:text-5xl"
+    class="relative flex min-h-screen flex-col justify-between bg-[#0166B0] px-8 py-12 text-3xl md:px-36 2xl:text-5xl"
   >
     <div class="flex grow items-center">
-      <div class="z-10 flex w-1/2 flex-col items-start justify-center gap-4">
+      <div
+        class="z-10 flex w-full flex-col items-center justify-center gap-4 text-center text-black 2xl:w-1/2 2xl:items-start 2xl:text-start 2xl:text-white"
+      >
         <h3 class="">Lorem ipsum dolor sit amet</h3>
         <h1 class="text-6xl font-bold uppercase">Lorem ipsum dolor sit amet</h1>
-        <div class="flex flex-row items-center justify-start gap-6">
-          <a class="rounded-xl bg-white px-7 py-4 text-center text-3xl uppercase text-orange-500"
-            >BUY</a
+        <div class="flex flex-row items-center justify-center gap-6 md:justify-start">
+          <a
+            :href="buyLink"
+            class="rounded-xl bg-[#0166B0] px-12 py-4 text-center text-3xl uppercase text-white hover:bg-orange-500 hover:text-white md:bg-white md:text-orange-500"
+            >BUY NOW</a
           >
         </div>
       </div>
       <div>
-        <img src="@/assets/bg.png" alt="Background" class="absolute right-0 top-0 z-0 h-[100vh]" />
+        <img
+          src="@/assets/bg.png"
+          alt="Background"
+          class="absolute right-0 top-0 z-0 h-[75vh] lg:h-[90vh] 2xl:h-[100vh]"
+        />
         <img
           src="@/assets/vaultbasic.png"
-          alt="Vault Basic"
-          class="absolute right-0 top-0 z-0 h-[85vh] -translate-x-1/2 translate-y-[5%]"
+          alt="Vault WIF Sol"
+          class="z-0 hidden h-[65vh] -translate-x-[15%] translate-y-[15%] md:absolute md:right-0 md:top-0 md:h-[65vh] md:-translate-x-[25%] md:translate-y-[5%] 2xl:block 2xl:h-[85vh] 2xl:-translate-x-1/2 2xl:translate-y-[5%]"
         />
       </div>
     </div>

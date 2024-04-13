@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.0"
-    class="h-10 w-10 sm:h-12 sm:w-12"
+    class="h-10 w-10 md:h-12 md:w-12"
     viewBox="0 0 358 358"
   >
     <g transform="translate(0,358) scale(0.1,-0.1)" fill="currentColor" stroke="none">
