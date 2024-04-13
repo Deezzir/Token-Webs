@@ -66,7 +66,7 @@ export default {
     class="flex min-h-screen items-center justify-center bg-[#0166B0] px-12 py-16 text-4xl sm:text-5xl xl:px-[15rem]"
   >
     <div class="flex w-full flex-col items-center justify-center gap-[4rem]">
-      <div class="flex grow flex-row items-start justify-center">
+      <div class="flex grow flex-row items-center justify-center">
         <div class="w-[20vw]">
           <img src="@/assets/pippump.png" alt="Pip Pump" class="w-full" />
         </div>
@@ -82,7 +82,7 @@ export default {
           class="relative flex flex-col items-center justify-center gap-4 rounded-xl bg-white p-10"
         >
           <span class="absolute top-0 -translate-y-1/2 rounded-xl bg-[#FDEA33] px-20 py-4"></span>
-          <h3 class="mt-12 text-3xl uppercase">{{ card.title }}</h3>
+          <h3 class="mt-12 text-3xl font-bold uppercase">{{ card.title }}</h3>
           <p class="text-center text-2xl">
             {{ card.description }}
           </p>
