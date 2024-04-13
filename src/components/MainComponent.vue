@@ -23,7 +23,7 @@ export default {
         <div class="flex flex-row items-center justify-center gap-6 md:justify-start">
           <a
             :href="buyLink"
-            class="rounded-xl bg-[#0166B0] px-12 py-4 text-center text-3xl uppercase text-white hover:bg-orange-500 hover:text-white md:bg-white md:text-orange-500"
+            class="rounded-xl bg-white px-12 py-4 text-center text-3xl uppercase text-orange-500 hover:bg-orange-500 hover:text-white"
             >BUY NOW</a
           >
         </div>
@@ -32,7 +32,7 @@ export default {
         <img
           src="@/assets/bg.png"
           alt="Background"
-          class="absolute right-0 top-0 z-0 h-[75vh] lg:h-[90vh] 2xl:h-[100vh]"
+          class="absolute right-0 top-0 z-0 h-[90vh] 2xl:h-[100vh]"
         />
         <img
           src="@/assets/vaultbasic.png"
