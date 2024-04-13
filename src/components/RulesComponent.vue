@@ -37,7 +37,7 @@ export default {
     <div class="flex flex-col items-center justify-center">
       <div class="flex w-full flex-col items-center justify-center gap-5">
         <h2 class="uppercase">- MAIN RULES -</h2>
-        <h3 class="text-center text-4xl uppercase">THIS IS YOUR SURVIVAL GIDE</h3>
+        <h3 class="text-center text-4xl uppercase">THIS IS YOUR SURVIVAL GUIDE</h3>
       </div>
       <div class="mt-12 grid grid-rows-1 gap-16 md:mt-24 md:grid-cols-2 2xl:grid-cols-4 2xl:gap-10">
         <div
