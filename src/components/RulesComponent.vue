@@ -32,7 +32,7 @@ export default {
 
 <template>
   <div
-    class="relative flex min-h-screen flex-col justify-between bg-[#0166B0] px-12 pb-0 pt-32 text-3xl sm:px-48 sm:pt-36 sm:text-5xl 2xl:pt-52"
+    class="relative flex min-h-screen flex-col justify-between bg-[#0166B0] px-12 py-16 text-3xl sm:px-48 sm:pt-[15rem] sm:text-5xl"
   >
     <div class="flex flex-col items-center justify-center">
       <div class="flex w-full flex-col items-center justify-center gap-5">
@@ -45,12 +45,17 @@ export default {
         <div
           v-for="(card, index) in cards"
           :key="index"
-          class="flex flex-col items-center justify-center gap-5 rounded-2xl bg-[#FDEA33] p-6 text-black"
+          class="relative flex flex-col items-center justify-center gap-5 rounded-l-xl rounded-tr-xl bg-[#FDEA33] p-6 text-black"
           :class="index % 2 === 0 ? 'translate-y-1/4' : ''"
         >
           <img :src="card.icon" alt="Icon" class="max-h-48" />
           <h3 class="text-center text-3xl uppercase">{{ card.title }}</h3>
           <p class="text-center text-2xl">{{ card.description }}</p>
+          <div
+            class="index absolute bottom-[5px] right-0 z-20 translate-y-full rounded-b-xl bg-[#FDEA33] px-6 py-2"
+          >
+            <p class="text-2xl font-bold">{{ index + 1 }}</p>
+          </div>
         </div>
       </div>
       <div class="mt-48 flex">

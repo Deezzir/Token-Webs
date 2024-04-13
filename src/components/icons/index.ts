@@ -8,3 +8,4 @@ export { default as DevIcon } from './DevIcon.vue';
 export { default as DexIcon } from './DexIcon.vue';
 export { default as RaydiumIcon } from './RaydiumIcon.vue';
 export { default as PlayIcon } from './PlayIcon.vue';
+export { default as ArrowIcon } from './ArrowIcon.vue';
