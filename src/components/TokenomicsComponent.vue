@@ -63,7 +63,7 @@ export default {
 
 <template>
   <div
-    class="flex min-h-screen items-center justify-center bg-[#0166B0] px-12 py-16 text-4xl sm:text-5xl xl:px-[15rem]"
+    class="flex min-h-screen items-center justify-center bg-[#0166B0] px-12 py-16 text-4xl sm:px-36 sm:text-5xl"
   >
     <div class="flex w-full flex-col items-center justify-center gap-[4rem]">
       <div class="flex grow flex-row items-center justify-center">
@@ -79,7 +79,7 @@ export default {
         <div
           v-for="(card, index) in cards"
           :key="index"
-          class="relative flex flex-col items-center justify-center gap-4 rounded-xl bg-white p-10"
+          class="sha relative flex flex-col items-center justify-center gap-4 rounded-xl bg-white p-10 shadow-md shadow-black"
         >
           <span class="absolute top-0 -translate-y-1/2 rounded-xl bg-[#FDEA33] px-20 py-4"></span>
           <h3 class="mt-12 text-3xl font-bold uppercase">{{ card.title }}</h3>

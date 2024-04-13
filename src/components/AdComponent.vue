@@ -45,7 +45,7 @@ export default {
   >
     <div class="flex grow flex-col items-center justify-center gap-10">
       <div
-        class="flex w-full grow flex-row items-center justify-between bg-[#FCE1AA] px-12 py-6 text-black xl:px-[15rem]"
+        class="flex w-full grow flex-row items-center justify-between bg-[#FCE1AA] px-12 py-6 text-black xl:px-36"
       >
         <div class="flex flex-col items-start justify-start gap-3">
           <h3 class="text-4xl font-bold">purchase low</h3>
@@ -59,7 +59,7 @@ export default {
           <img src="@/assets/jeets.png" alt="Jeets" class="max-h-96" />
         </div>
       </div>
-      <div class="w-full px-12 py-6 xl:px-[15rem]">
+      <div class="w-full px-12 py-6 xl:px-36">
         <div class="grid grid-cols-3 grid-rows-1 gap-6">
           <div
             v-for="(card, index) in cards"

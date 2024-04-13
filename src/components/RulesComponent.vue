@@ -32,7 +32,7 @@ export default {
 
 <template>
   <div
-    class="relative flex min-h-screen flex-col justify-between bg-[#0166B0] px-12 py-16 text-3xl sm:px-48 sm:pt-[15rem] sm:text-5xl"
+    class="sm:pн-[15rem] relative flex min-h-screen flex-col justify-between bg-[#0166B0] px-12 py-16 text-3xl sm:px-36 sm:text-5xl"
   >
     <div class="flex flex-col items-center justify-center">
       <div class="flex w-full flex-col items-center justify-center gap-5">

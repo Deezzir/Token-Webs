@@ -14,21 +14,16 @@ export default {
 
 <template>
   <div
-    class="relative flex min-h-screen flex-col justify-between bg-[#0166B0] px-12 py-32 text-3xl sm:px-48 sm:py-36 sm:text-5xl"
+    class="relative flex min-h-screen flex-col justify-between bg-[#0166B0] px-12 py-16 text-3xl sm:px-36 sm:text-5xl"
   >
     <div class="flex grow items-center">
       <div class="z-10 flex w-1/2 flex-col items-start justify-center gap-4">
         <h3 class="">Lorem ipsum dolor sit amet</h3>
         <h1 class="text-6xl font-bold uppercase">Lorem ipsum dolor sit amet</h1>
         <div class="flex flex-row items-center justify-start gap-6">
-          <a class="rounded-xl bg-white px-7 py-4 text-center text-2xl uppercase text-orange-500"
-            >EXPLORE</a
+          <a class="rounded-xl bg-white px-7 py-4 text-center text-3xl uppercase text-orange-500"
+            >BUY</a
           >
-          <a
-            class="inline-flex items-center justify-center rounded-full border-2 border-white bg-transparent p-4"
-            ><PlayIcon class="h-7 w-7 text-white"
-          /></a>
-          <p>How to get in?</p>
         </div>
       </div>
       <div>
