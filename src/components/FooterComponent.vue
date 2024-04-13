@@ -26,7 +26,7 @@ export default {
     class="bg-[#FDEA33] py-2 text-center text-black backdrop-blur transition-colors duration-500"
   >
     <p class="flex flex-row items-center justify-center gap-2">
-      <span class="text-sm font-bold sm:text-xl">$FRODO &copy; 2024</span>
+      <span class="text-sm font-bold sm:text-xl">$VAULTBOY &copy; 2024</span>
       <span class="inline-flex">
         <a :href="twitter" rel="noopener noreferrer" class="mx-1 rounded p-2 font-bold">
           <TwitterIcon class="h-6 w-6" />
@@ -40,9 +40,9 @@ export default {
       </span>
     </p>
     <p class="px-2 text-sm">
-      $FRODO is a memecoin with no intrinsic value, and is not a investment and simply a
-      community/culture token similar to $FRODO. No Promises, No Utility, Purely For Entertainment
-      Purposes
+      $VAULTBOY is a memecoin with no intrinsic value, and is not a investment and simply a
+      community/culture token similar to $VAULTBOY. No Promises, No Utility, Purely For
+      Entertainment Purposes
     </p>
   </footer>
 </template>
