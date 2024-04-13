@@ -18,8 +18,8 @@ export default {
       <div
         class="z-10 flex w-full flex-col items-center justify-center gap-4 text-center text-black 2xl:w-1/2 2xl:items-start 2xl:text-start 2xl:text-white"
       >
-        <h3 class="">Lorem ipsum dolor sit amet</h3>
-        <h1 class="text-6xl font-bold uppercase">Lorem ipsum dolor sit amet</h1>
+        <h3 class="">$VAULTBOY</h3>
+        <h1 class="text-6xl font-bold uppercase">BUILD TO SURVIVE CRYPTO DUMPS</h1>
         <div class="flex flex-row items-center justify-center gap-6 md:justify-start">
           <a
             :href="buyLink"

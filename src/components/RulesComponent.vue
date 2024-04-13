@@ -5,23 +5,23 @@ export default {
     return {
       cards: [
         {
-          title: 'Some',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          title: 'NO JEETS',
+          description: 'Jeeting in any form is prohibited as action',
           icon: '/pipnojeet.png'
         },
         {
-          title: 'Some',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          title: 'EAT DIPS',
+          description: 'Stay at your best nutrition level for survival',
           icon: '/pipeatdip.png'
         },
         {
-          title: 'Some',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          title: 'SHILL X',
+          description: 'Don’t forget to participate in community activities',
           icon: '/shillhard.png'
         },
         {
-          title: 'Some',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          title: 'Degen',
+          description: 'Degen degen degen degen degen degen degen',
           icon: '/degen.png'
         }
       ]
@@ -37,9 +37,7 @@ export default {
     <div class="flex flex-col items-center justify-center">
       <div class="flex w-full flex-col items-center justify-center gap-5">
         <h2 class="uppercase">- MAIN RULES -</h2>
-        <h3 class="text-center text-4xl uppercase">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </h3>
+        <h3 class="text-center text-4xl uppercase">THIS IS YOUR SURVIVAL GIDE</h3>
       </div>
       <div class="mt-12 grid grid-rows-1 gap-16 md:mt-24 md:grid-cols-2 2xl:grid-cols-4 2xl:gap-10">
         <div
@@ -60,9 +58,7 @@ export default {
       </div>
       <div class="mt-24 flex md:mt-48">
         <h3 class="text-center text-3xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae itaque iure, ab
-          nam ipsam, natus iste laudantium quaerat quidem molestias omnis nobis ex ea soluta sunt
-          veniam repudiandae inventore.
+          ISSUED BY $VAULTBOY DOCUMENTATION DEPARTMENT, APRIL, 2024
         </h3>
       </div>
     </div>

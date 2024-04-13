@@ -12,16 +12,19 @@ export default {
       isNarrowScreen: false,
       cards: [
         {
-          title: 'Some',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          title: 'LAUNCH',
+          description:
+            'Fair launch at the pump fun. We would let the community speak if they like it or not…'
         },
         {
-          title: 'Some',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          title: 'RAYDIUM',
+          description:
+            'Vault team would handle all necessary updates, do not forget to follow survival guidelines'
         },
         {
-          title: 'Some',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          title: '$VAULTBOY',
+          description:
+            'Our goal is to reach a high MC following the “Fallout” “Iran” and “Crypto Dumps” memes'
         }
       ]
     }
