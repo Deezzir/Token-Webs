@@ -75,14 +75,14 @@ export default {
 
 <template>
   <nav
-    class="z-10000 sm:text-basef fixed bottom-0 flex h-10 w-full transform select-none items-center justify-between overflow-x-auto border-[1px] border-t-[#fff] bg-[#c0c0c0] px-3 text-xs"
+    class="fixed bottom-0 z-50 flex h-10 w-full select-none items-center justify-between overflow-x-auto border-[1px] border-t-[#fff] bg-[#c0c0c0] px-3 text-xs sm:text-base"
   >
-    <div class="flex flex-row flex-nowrap items-center justify-center gap-1">
+    <div class="flex flex-row items-center justify-center gap-1">
       <div :class="clickedMenu ? 'shadow-clicked bg-checker-pattern' : 'window-shadow'">
         <button
           @click="toggleMenu"
           v-click-outside="closeMenu"
-          class="cursor-pointer bg-[url('/icons/windows_logo.png')] bg-[length:25px] bg-[position:10px_50%] bg-no-repeat py-1 pl-10 pr-2 font-[500] text-black sm:py-[6px]"
+          class="cursor-pointer bg-[url('/icons/windows_logo.png')] bg-[length:25px] bg-[position:10px_50%] bg-no-repeat py-1 pl-10 pr-2 font-[500] text-black"
         >
           Menu
         </button>
@@ -98,23 +98,23 @@ export default {
           :key="index"
           @click="currentNav = index"
           :style="{ backgroundImage: `url(${item.icon})` }"
-          class="cursor-pointer text-nowrap bg-[length:20px] bg-[position:10px_50%] bg-no-repeat py-1 pl-10 pr-2 font-[500] text-black sm:py-[6px]"
+          class="cursor-pointer text-nowrap bg-[length:20px] bg-[position:10px_50%] bg-no-repeat py-1 pl-10 pr-2 font-[500] text-black"
         >
           {{ item.name }}
         </button>
       </div>
     </div>
     <div
-      class="ml-2 border-[1px] border-b-[#fff] border-l-[#808080] border-r-[#fff] border-t-[#808080] px-6 py-1 text-base text-black sm:ml-0 sm:py-[4px]"
+      class="ml-2 border-[1px] border-b-[#fff] border-l-[#808080] border-r-[#fff] border-t-[#808080] px-6 py-1 text-base text-black sm:ml-0"
     >
       <p class="text-nowrap">{{ currentTime }}</p>
     </div>
-    <div v-show="clickedMenu" class="absolute bottom-[35px] left-0 text-black">
-      <div
-        class="window-shadow flex h-[15rem] w-[15rem] flex-col items-center justify-center gap-1 border-[1px] border-gray-400 bg-[#c0c0c0] p-1"
-      >
-        <img src="@/assets/vision.gif" alt="vision gif" class="object-cover" />
-      </div>
-    </div>
   </nav>
+  <div v-show="clickedMenu" class="absolute bottom-[35px] left-0 z-[60] text-black">
+    <div
+      class="window-shadow flex h-[15rem] w-[15rem] flex-col items-center justify-center gap-1 border-[1px] border-gray-400 bg-[#c0c0c0] p-1"
+    >
+      <img src="@/assets/vision.gif" alt="vision gif" class="object-cover" />
+    </div>
+  </div>
 </template>
