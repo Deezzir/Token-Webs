@@ -17,7 +17,7 @@ export default {
     <div class="window-shadow flex h-auto w-full flex-col overflow-hidden bg-[#c0c0c0] p-[6px]">
       <div class="window-header flex select-none flex-row items-center justify-between">
         <div class="flex flex-row gap-1">
-          <img src="/dex.png" alt="logo" class="h-6 w-6" />
+          <img src="/icons/dex.png" alt="logo" class="h-6 w-6" />
           <span class="">Mibibi - Dexscreener</span>
         </div>
         <WindowButtons />

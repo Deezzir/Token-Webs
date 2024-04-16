@@ -53,19 +53,19 @@ export default {
       ></a
     >
     <!-- <a class="flex flex-col items-center gap-1" :href="dex"
-      ><img src="/dex.png" alt="logo" class="h-10 w-10" /><span
+      ><img src="/icons/dex.png" alt="logo" class="h-10 w-10" /><span
         class="min-w-24 bg-[#008080] text-center"
         >Dex</span
       ></a
     >
     <a class="flex flex-col items-center gap-1" :href="dex"
-      ><img src="/raydium.png" alt="logo" class="h-10 w-10" /><span
+      ><img src="/icons/raydium.png" alt="logo" class="h-10 w-10" /><span
         class="min-w-24 bg-[#008080] text-center"
         >Raydium</span
       ></a
     >
     <a class="flex flex-col items-center gap-1" :href="dex"
-      ><img src="/jupiter.png" alt="logo" class="h-10 w-10" /><span
+      ><img src="/icons/jupiter.png" alt="logo" class="h-10 w-10" /><span
         class="min-w-24 bg-[#008080] text-center"
         >Jupiter</span
       ></a

@@ -33,7 +33,7 @@ export default {
         }
         // {
         //   name: 'Mibibi - Dexscreener',
-        //   icon: '/dex.png',
+        //   icon: '/icons/dex.png',
         //   action: 'toggleDex'
         // }
       ],
