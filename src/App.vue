@@ -11,7 +11,7 @@ import ChartComponent from './components/ChartComponent.vue'
 export default {
   data() {
     return {
-      booted: true,
+      booted: false,
       mibibis: [
         '/mibibis/mibibi1.png',
         '/mibibis/mibibi2.png',
@@ -49,17 +49,17 @@ export default {
     playAudio() {
       const audio = document.getElementById('click') as HTMLAudioElement
       audio.currentTime = 0
-      audio.src = '/click.mp3'
+      audio.src = '/sounds/click.mp3'
       audio.play()
     },
     boot() {
       this.booted = true
       const audio = document.getElementById('audio') as HTMLAudioElement
-      audio.src = '/startup.mp3'
+      audio.src = '/sounds/startup.mp3'
       audio.play()
       setTimeout(() => {
         window.addEventListener('click', this.playAudio)
-        audio.src = '/computer-sounds.mp3'
+        audio.src = '/sounds/computer-sounds.mp3'
         audio.loop = true
         audio.volume = 0.3
         audio.play()
