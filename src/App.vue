@@ -12,7 +12,7 @@ import PopupComponent from './components/PopupComponent.vue'
 export default {
   data() {
     return {
-      booted: true,
+      booted: false,
       mibibis: [
         '/mibibis/mibibi1.png',
         '/mibibis/mibibi2.png',
