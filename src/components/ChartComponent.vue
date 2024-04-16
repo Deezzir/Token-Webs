@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import WindowButtons from '@/components/common/WindowButtonsComponent.vue'
+</script>
 
 <script lang="ts">
 export default {
@@ -11,22 +13,22 @@ export default {
 </script>
 
 <template>
-  <div
-    class="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#0166B0] px-8 py-12 text-4xl text-white md:px-36 md:text-5xl"
-  >
-    <div class="flex w-full flex-col items-center justify-center gap-2">
-      <h2 class="text-center font-bold uppercase">
-        <span class="hidden md:block">- </span>CHART AND BUY LINKS COMING<span
-          class="hidden md:block"
-        >
-          -</span
-        >
-      </h2>
-      <!-- <div id="dexscreener-embed" class="">
+  <div class="flex w-[30%] flex-col">
+    <div class="window-shadow flex h-auto w-full flex-col overflow-hidden bg-[#c0c0c0] p-[6px]">
+      <div class="window-header flex select-none flex-row items-center justify-between">
+        <div class="flex flex-row gap-1">
+          <img src="/dex.png" alt="logo" class="h-6 w-6" />
+          <span class="">Mibibi - Dexscreener</span>
+        </div>
+        <WindowButtons />
+      </div>
+    </div>
+    <div class="h-full w-full border-[1px] border-gray-400 bg-white p-[6px]">
+      <div id="dexscreener-embed">
         <iframe
           src="https://dexscreener.com/solana/2xCGqSn86Y2Ziba7sR6Nd2G5HqaYtFfL5NhpvwsyKc9R?embed=1&theme=dark&trades=0"
         ></iframe>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -47,12 +49,10 @@ export default {
 }
 #dexscreener-embed iframe {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 2px solid #e2c100;
-  border-radius: 1rem;
 }
 </style>

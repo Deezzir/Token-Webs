@@ -9,5 +9,6 @@ declare module '@vue/runtime-core' {
         $telegramDev: string;
         $dex: string;
         $raydium: string;
+        $jupiter: string;
     }
 }

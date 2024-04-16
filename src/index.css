@@ -9,11 +9,57 @@
     box-sizing: border-box;
   }
 
+  html {
+    font-family: sans-serif;
+  }
+
   body {
-    color: #FFFFFF;
-    background-color: #0166B0;
-    font-family: "Kanit", sans-serif;
+    color: #ffffff;
+    background-color: #008080;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-style: normal;
+    background-image: url('/clouds.jpg');
+    background-size: cover;
+  }
+
+  .window-shadow {
+    box-shadow:
+      inset -1px -1px #0a0a0a,
+      inset 1px 1px #fff,
+      inset -2px -2px grey,
+      inset 2px 2px #dfdfdf;
+  }
+
+  .shadow-clicked {
+    box-shadow:
+      inset 1px 1px #0a0a0a,
+      inset -1px -1px #fff,
+      inset 2px 2px grey,
+      inset -2px -2px #dfdfdf;
+  }
+
+  .bg-checker-pattern {
+    background-image: linear-gradient(45deg, #808080 25%, transparent 25%),
+      linear-gradient(-45deg, #808080 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #808080 75%),
+      linear-gradient(-45deg, transparent 75%, #808080 75%);
+    background-size: 2px 2px;
+    background-position:
+      0 0,
+      0 1px,
+      1px -1px,
+      -1px 0px;
+  }
+
+  .cairo {
+    font-family: 'Cairo', sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-variation-settings: 'slnt' 0;
+  }
+
+  .window-header {
+    background-image: linear-gradient(to right, rgb(0, 0, 128), rgb(16, 132, 208));
   }
 }

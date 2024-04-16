@@ -5,12 +5,28 @@ import App from './App.vue'
 
 const app = createApp(App)
 
-app.config.globalProperties.$CA = '7rwHQ8qykg4AjP6Tv5Xo6HPUVdug2gA2LcK9y8wWHU22'
-app.config.globalProperties.$telegram = 'https://t.me/thevault_boy'
-app.config.globalProperties.$twitter = 'https://twitter.com/VAULTBOYI'
-app.config.globalProperties.$buyLink = 'https://www.pump.fun/7rwHQ8qykg4AjP6Tv5Xo6HPUVdug2gA2LcK9y8wWHU22'
+app.config.globalProperties.$CA = 'Coming'
+app.config.globalProperties.$telegram = 'Coming'
+app.config.globalProperties.$twitter = 'https://twitter.com/mihabibi_'
+app.config.globalProperties.$buyLink = 'Coming'
 app.config.globalProperties.$telegramDev = 'https://t.me/lettodev'
 app.config.globalProperties.$dex = 'Coming'
 app.config.globalProperties.$raydium = 'Coming'
+app.config.globalProperties.$jupiter = 'Coming'
+
+app.directive('click-outside', {
+    beforeMount(el, binding) {
+        el.clickOutsideEvent = function (event: any) {
+            if (!(el == event.target || el.contains(event.target))) {
+                binding.value(event);
+            }
+        };
+        document.body.addEventListener('click', el.clickOutsideEvent)
+    },
+    unmounted(el) {
+        document.body.removeEventListener('click', el.clickOutsideEvent)
+    },
+});
+
 
 app.mount('#app')

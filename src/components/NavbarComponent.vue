@@ -5,59 +5,115 @@ import DexIcon from './icons/DexIcon.vue'
 
 <script lang="ts">
 export default {
-  computed: {
-    twitter(): string {
-      return this.$twitter
-    },
-    telegram(): string {
-      return this.$telegram
-    },
-    raydium(): string {
-      return this.$raydium
-    },
-    dexLink(): string {
-      return this.$dex
+  data() {
+    return {
+      currentTime: this.getCurrentTime(),
+      timer: 0,
+      currentNav: 0,
+      nav: [
+        {
+          name: 'Description.txt - Notepad',
+          icon: '/icons/notepad.png',
+          action: 'toggleNote'
+        },
+        {
+          name: 'Desert1.png - IrfanView',
+          icon: '/icons/irfan.png',
+          action: 'toggleIrfan1'
+        },
+        {
+          name: 'MyMibibis - IrfanView',
+          icon: '/icons/irfan.png',
+          action: 'toggleIrfan2'
+        },
+        {
+          name: 'Desert2.png - Paint',
+          icon: '/icons/paint.png',
+          action: 'togglePaint'
+        }
+        // {
+        //   name: 'Mibibi - Dexscreener',
+        //   icon: '/dex.png',
+        //   action: 'toggleDex'
+        // }
+      ],
+      clickedMenu: false
     }
+  },
+  methods: {
+    getCurrentTime() {
+      const now = new Date()
+      let hours = now.getHours()
+      const minutes = now.getMinutes()
+      const ampm = hours >= 12 ? 'PM' : 'AM'
+
+      hours = hours % 12
+      hours = hours ? hours : 12
+      const strHours = hours < 10 ? `0${hours}` : hours
+      const strMinutes = minutes < 10 ? `0${minutes}` : minutes
+
+      return `${strHours}:${strMinutes} ${ampm}`
+    },
+    updateCurrentTime() {
+      this.currentTime = this.getCurrentTime()
+    },
+    toggleMenu() {
+      this.clickedMenu = !this.clickedMenu
+    },
+    closeMenu() {
+      this.clickedMenu = false
+    }
+  },
+  mounted() {
+    this.timer = setInterval(this.updateCurrentTime, 1000)
+  },
+  beforeDestroy() {
+    clearInterval(this.timer)
   }
 }
 </script>
 
 <template>
-  <nav class="absolute left-1/2 top-0 z-10 w-full -translate-x-1/2 transform bg-transparent">
-    <div
-      class="m-auto flex items-center justify-center gap-5 px-8 py-6 md:justify-start md:gap-10 md:px-36"
-    >
-      <div>
-        <h1
-          class="flex flex-row items-center text-2xl font-bold uppercase text-black sm:text-4xl md:text-white xl:text-5xl"
+  <nav
+    class="z-10000 sm:text-basef fixed bottom-0 flex h-10 w-full transform select-none items-center justify-between overflow-x-auto border-[1px] border-t-[#fff] bg-[#c0c0c0] px-3 text-xs"
+  >
+    <div class="flex flex-row flex-nowrap items-center justify-center gap-1">
+      <div :class="clickedMenu ? 'shadow-clicked bg-checker-pattern' : 'window-shadow'">
+        <button
+          @click="toggleMenu"
+          v-click-outside="closeMenu"
+          class="cursor-pointer bg-[url('/icons/windows_logo.png')] bg-[length:25px] bg-[position:10px_50%] bg-no-repeat py-1 pl-10 pr-2 font-[500] text-black sm:py-[6px]"
         >
-          <span class="inline-flex items-center justify-center md:mr-2">
-            <img
-              src="@/assets/vaultleak.png"
-              alt="Vault Boy"
-              class="mr-4 inline-block w-8 md:w-12"
-            />
-          </span>
-          Vault Boy
-        </h1>
+          Menu
+        </button>
       </div>
-      <div>
-        <div class="flex flex-row items-center justify-center">
-          <a :href="twitter" rel="noopener noreferrer" class="mx-1 rounded p-1 md:p-2">
-            <TwitterIcon class="h-8 w-8 text-black md:h-10 md:w-12 md:text-white xl:h-12 xl:w-12" />
-          </a>
-          <a :href="telegram" rel="noopener noreferrer" class="mx-1 rounded p-1 md:p-2">
-            <TelegramIcon
-              class="h-8 w-8 text-black md:h-10 md:w-12 md:text-white xl:h-12 xl:w-12"
-            />
-          </a>
-          <!-- <a :href="raydium" rel="noopener noreferrer" class="mx-1 rounded p-1 md:p-2">
-            <RaydiumIcon class="h-8 w-8 text-black md:h-10 md:w-12 xl:h-12 xl:w-12 md:text-white" />
-          </a>
-          <a :href="dexLink" rel="noopener noreferrer" class="mx-1 rounded p-1 md:p-2">
-            <DexIcon class="h-8 w-8 text-black md:h-10 md:w-12 xl:h-12 xl:w-12 md:text-white" />
-          </a> -->
-        </div>
+      <div
+        class="mx-[1px] h-7 border-[1px] border-b-[#fff] border-l-[#808080] border-r-[#fff] border-t-[#808080]"
+      ></div>
+      <div
+        v-for="(item, index) in nav"
+        :class="currentNav === index ? 'shadow-clicked bg-checker-pattern' : 'window-shadow'"
+      >
+        <button
+          :key="index"
+          @click="currentNav = index"
+          :style="{ backgroundImage: `url(${item.icon})` }"
+          class="cursor-pointer text-nowrap bg-[length:20px] bg-[position:10px_50%] bg-no-repeat py-1 pl-10 pr-2 font-[500] text-black sm:py-[6px]"
+        >
+          {{ item.name }}
+        </button>
+      </div>
+    </div>
+    <div
+      class="ml-2 border-[1px] border-b-[#fff] border-l-[#808080] border-r-[#fff] border-t-[#808080] px-6 py-1 text-base text-black sm:ml-0 sm:py-[4px]"
+    >
+      <p class="text-nowrap">{{ currentTime }}</p>
+    </div>
+    <div v-show="clickedMenu" class="absolute bottom-[35px] left-0 text-black">
+      <div
+        class="window-shadow flex h-[15rem] w-[15rem] flex-col items-center justify-center gap-1 border-[1px] border-gray-400 bg-[#c0c0c0] p-1"
+      >
+        <img src="@/assets/vision.gif" alt="vision gif" class="object-cover" />
       </div>
     </div>
   </nav>
