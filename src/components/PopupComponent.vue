@@ -49,7 +49,7 @@ export default {
       <div class="flex flex-col items-center justify-center gap-4 py-4 text-lg">
         <div class="flex flex-row items-center justify-center gap-2">
           <img src="@/assets/error.png" alt="error" class="h-8 w-8" />
-          <p>We are selling your kidney</p>
+          <p class="cairo text-lg">ا يمكن، حبيبي</p>
         </div>
         <button @click="$emit('popup-close')" class="window-shadow px-5 py-1 uppercase">OK</button>
       </div>

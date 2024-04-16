@@ -34,7 +34,11 @@ export default {
           <img src="/icons/paint.png" alt="logo" class="h-6 w-6" />
           <span class="">{{ title }} - Paint</span>
         </div>
-        <WindowButtons />
+        <WindowButtons
+          :minimize-func="handlePress"
+          :maximize-func="handlePress"
+          :close-func="handlePress"
+        />
       </div>
       <div class="flex select-none flex-row gap-[6px] p-1 text-center text-xs text-black">
         <div><span class="underline">F</span>ile</div>
