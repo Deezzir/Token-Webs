@@ -11,7 +11,7 @@ import ChartComponent from './components/ChartComponent.vue'
 export default {
   data() {
     return {
-      booted: true,
+      booted: false,
       mibibis: [
         '/mibibis/mibibi1.png',
         '/mibibis/mibibi2.png',
