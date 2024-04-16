@@ -5,13 +5,14 @@ import DescriptionComponent from './components/DescriptionComponent.vue'
 import PictureComponent from './components/PictureComponent.vue'
 import PaintComponent from './components/PaintComponent.vue'
 import ChartComponent from './components/ChartComponent.vue'
+import PopupComponent from './components/PopupComponent.vue'
 </script>
 
 <script lang="ts">
 export default {
   data() {
     return {
-      booted: false,
+      booted: true,
       mibibis: [
         '/mibibis/mibibi1.png',
         '/mibibis/mibibi2.png',
@@ -39,7 +40,8 @@ export default {
         '/mibibis/mibibi24.png'
       ],
       desert1: '/desert1.png',
-      desert2: '/desert2.jpg'
+      desert2: '/desert2.jpg',
+      popup: false
     }
   },
   unmounted() {
@@ -64,6 +66,15 @@ export default {
         audio.volume = 0.3
         audio.play()
       }, 6000)
+    },
+    popupReopen() {
+      this.popup = false
+      setTimeout(() => {
+        this.popup = true
+      }, 100)
+    },
+    popupClose() {
+      this.popup = false
     }
   }
 }
@@ -71,6 +82,7 @@ export default {
 
 <template>
   <main class="relative flex flex-col">
+    <PopupComponent :is-visible="popup" @popup-close="popupClose" :close-func="popupClose" />
     <div v-show="!booted" class="flex min-h-screen w-full items-center justify-center bg-black">
       <button @click="boot">
         <img src="@/assets/power.png" alt="windows" class="h-36 w-36" />
@@ -84,27 +96,30 @@ export default {
               <AppsComponent />
               <PictureComponent
                 title="MyMibibis"
+                @press="popupReopen"
                 :image_paths="mibibis"
                 class="absolute translate-x-[25%] translate-y-[10%] md:static"
               />
-              <DescriptionComponent />
+              <DescriptionComponent @press="popupReopen" />
             </div>
           </div>
           <div class="flex w-full flex-row justify-between">
             <PaintComponent
-              title="Desert2.png"
+              @press="popupReopen"
+              title="untitled"
               :image_path="desert2"
               class="absolute w-auto -translate-y-[10%] sm:static md:w-1/3"
             />
             <!-- <ChartComponent class="translate-y-[15%]" /> -->
             <PictureComponent
               title="Desert1.png"
+              @press="popupReopen"
               :image_paths="[desert1]"
               class="md:-translate-x-[10%] md:translate-y-[10%]"
             />
           </div>
         </div>
-        <NavbarComponent />
+        <NavbarComponent @press="popupReopen" />
       </div>
     </transition>
     <audio hidden id="click"></audio>

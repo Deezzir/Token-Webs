@@ -40,6 +40,12 @@ export default {
         >Dev</span
       ></a
     >
+    <a class="flex flex-col items-center gap-1" :href="buyLink"
+      ><img src="@/assets/coin.png" alt="dev" class="h-10 w-10" /><span
+        class="min-w-24 bg-[#008080] text-center"
+        >Buy</span
+      ></a
+    >
     <a class="flex flex-col items-center gap-1" :href="telegram"
       ><img src="@/assets/tg.png" alt="telegram" class="h-10 w-10" /><span
         class="min-w-24 bg-[#008080] text-center"

@@ -26,6 +26,7 @@ export default {
       if (this.autoSwitchEnabled) this.nextImage()
     }, 2000)
   },
+  emits: ['press'],
   methods: {
     userNextImage() {
       this.pauseAutoSwitch()
@@ -48,6 +49,9 @@ export default {
       this.switchTimer = setTimeout(() => {
         this.autoSwitchEnabled = true
       }, 5000)
+    },
+    handlePress() {
+      this.$emit('press')
     }
   }
 }
@@ -61,7 +65,11 @@ export default {
           <img src="/icons/irfan.png" alt="logo" class="h-6 w-6" />
           <span class="">{{ title }} - IrfanView</span>
         </div>
-        <WindowButtons />
+        <WindowButtons
+          :minimize-func="handlePress"
+          :maximize-func="handlePress"
+          :close-func="handlePress"
+        />
       </div>
       <div class="flex select-none flex-row gap-[6px] p-1 text-center text-xs text-black">
         <div><span class="underline">F</span>ile</div>

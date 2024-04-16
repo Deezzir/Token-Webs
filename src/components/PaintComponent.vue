@@ -17,9 +17,12 @@ export default {
       required: true
     }
   },
-  created() {},
-  unmounted() {},
-  methods: {}
+  emits: ['press'],
+  methods: {
+    handlePress() {
+      this.$emit('press')
+    }
+  }
 }
 </script>
 
@@ -45,7 +48,8 @@ export default {
       <div class="flex grow flex-row">
         <div class="flex min-w-20 flex-col px-1">
           <div class="grid h-full grid-cols-2 items-center justify-center gap-0">
-            <div
+            <button
+              @click="handlePress"
               v-for="n in 16"
               class="flex h-full w-full items-center justify-center"
               :class="n === 7 ? 'shadow-clicked bg-checker-pattern' : 'window-shadow'"
@@ -57,7 +61,7 @@ export default {
                   backgroundPosition: `calc(-16px*(${n - 1}* 2 + 1)) -16px`
                 }"
               ></div>
-            </div>
+            </button>
           </div>
           <div class="h-16 w-full pb-1 pt-2"><div class="shadow-clicked h-full"></div></div>
           <div

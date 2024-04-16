@@ -5,10 +5,10 @@ import App from './App.vue'
 
 const app = createApp(App)
 
-app.config.globalProperties.$CA = 'Coming'
-app.config.globalProperties.$telegram = 'Coming'
+app.config.globalProperties.$CA = 'egNbLuvNtBfSkbXLCjpCCtQWSXMes72pAUsaqt8mik8'
+app.config.globalProperties.$telegram = 'https://t.me/mihabibi11'
 app.config.globalProperties.$twitter = 'https://twitter.com/mihabibi_'
-app.config.globalProperties.$buyLink = 'Coming'
+app.config.globalProperties.$buyLink = 'https://pump.fun/egNbLuvNtBfSkbXLCjpCCtQWSXMes72pAUsaqt8mik8'
 app.config.globalProperties.$telegramDev = 'https://t.me/lettodev'
 app.config.globalProperties.$dex = 'Coming'
 app.config.globalProperties.$raydium = 'Coming'

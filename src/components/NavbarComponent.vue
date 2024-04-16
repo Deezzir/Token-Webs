@@ -27,7 +27,7 @@ export default {
           action: 'toggleIrfan2'
         },
         {
-          name: 'Desert2.png - Paint',
+          name: 'untitled - Paint',
           icon: '/icons/paint.png',
           action: 'togglePaint'
         }
@@ -40,6 +40,7 @@ export default {
       clickedMenu: false
     }
   },
+  emits: ['press'],
   methods: {
     getCurrentTime() {
       const now = new Date()
@@ -62,6 +63,10 @@ export default {
     },
     closeMenu() {
       this.clickedMenu = false
+    },
+    handlePress(index: number) {
+      this.currentNav = index
+      this.$emit('press')
     }
   },
   mounted() {
@@ -96,7 +101,7 @@ export default {
       >
         <button
           :key="index"
-          @click="currentNav = index"
+          @click="handlePress(index)"
           :style="{ backgroundImage: `url(${item.icon})` }"
           class="cursor-pointer text-nowrap bg-[length:20px] bg-[position:10px_50%] bg-no-repeat py-1 pl-10 pr-2 font-[500] text-black"
         >
