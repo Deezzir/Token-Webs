@@ -8,10 +8,10 @@ const app = createApp(App)
 app.config.globalProperties.$CA = '4inoptdokTnnH5cU64CP64WQbeV6gdFUVmiokPfwzbsL'
 app.config.globalProperties.$telegram = 'https://t.me/mihabibi11'
 app.config.globalProperties.$twitter = 'https://twitter.com/mihabibi_'
-app.config.globalProperties.$buyLink = 'https://pump.fun/4inoptdokTnnH5cU64CP64WQbeV6gdFUVmiokPfwzbsL'
+app.config.globalProperties.$buyLink = 'https://raydium.io/swap/?inputCurrency=4inoptdokTnnH5cU64CP64WQbeV6gdFUVmiokPfwzbsL&outputCurrency=sol&outputSymbol=4inopt&fixed=out'
 app.config.globalProperties.$telegramDev = 'https://t.me/lettodev'
-app.config.globalProperties.$dex = 'Coming'
-app.config.globalProperties.$raydium = 'Coming'
+app.config.globalProperties.$dex = 'https://dexscreener.com/solana/ERCD6qtvn4sWhmNBLyPXfoKghjFRM3gxAYKxNzcw9a5x'
+app.config.globalProperties.$raydium = 'https://raydium.io/swap/?inputCurrency=4inoptdokTnnH5cU64CP64WQbeV6gdFUVmiokPfwzbsL&outputCurrency=sol&outputSymbol=4inopt&fixed=out'
 app.config.globalProperties.$jupiter = 'Coming'
 
 app.directive('click-outside', {

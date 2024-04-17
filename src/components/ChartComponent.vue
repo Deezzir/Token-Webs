@@ -26,7 +26,7 @@ export default {
     <div class="h-full w-full border-[1px] border-gray-400 bg-white p-[6px]">
       <div id="dexscreener-embed">
         <iframe
-          src="https://dexscreener.com/solana/2xCGqSn86Y2Ziba7sR6Nd2G5HqaYtFfL5NhpvwsyKc9R?embed=1&theme=dark&trades=0"
+          src="https://dexscreener.com/solana/ERCD6qtvn4sWhmNBLyPXfoKghjFRM3gxAYKxNzcw9a5x?embed=1&theme=dark&trades=0"
         ></iframe>
       </div>
     </div>

@@ -19,6 +19,9 @@ export default {
     },
     telegramDev(): string {
       return this.$telegramDev
+    },
+    raydium(): string {
+      return this.$raydium
     }
   }
 }
@@ -78,29 +81,33 @@ export default {
         >X</span
       ></a
     >
-    <!-- <a class="flex flex-col items-center gap-1" :href="dex"
-        target="_blank"
+    <a
+      class="flex flex-col items-center gap-1"
+      :href="dex"
+      target="_blank"
       rel="noopener noreferrer"
       ><img src="/icons/dex.png" alt="logo" class="h-10 w-10" /><span
         class="min-w-24 bg-[#008080] text-center"
         >Dex</span
       ></a
     >
-    <a class="flex flex-col items-center gap-1" :href="dex"
-    target="_blank"
+    <a
+      class="flex flex-col items-center gap-1"
+      :href="raydium"
+      target="_blank"
       rel="noopener noreferrer"
       ><img src="/icons/raydium.png" alt="logo" class="h-10 w-10" /><span
         class="min-w-24 bg-[#008080] text-center"
         >Raydium</span
       ></a
     >
-    <a class="flex flex-col items-center gap-1" :href="dex"
+    <!-- <a class="flex flex-col items-center gap-1" :href="dex"
     target="_blank"
       rel="noopener noreferrer"
       ><img src="/icons/jupiter.png" alt="logo" class="h-10 w-10" /><span
         class="min-w-24 bg-[#008080] text-center"
         >Jupiter</span
       ></a
-    > -->
+    >  -->
   </div>
 </template>
