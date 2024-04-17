@@ -25,6 +25,9 @@ export default {
     },
     dexTools(): string {
       return this.$dextools
+    },
+    jupiter(): string {
+      return this.$jupiter
     }
   }
 }
@@ -116,7 +119,7 @@ export default {
     >
     <a
       class="flex flex-col items-center gap-1"
-      :href="dex"
+      :href="jupiter"
       target="_blank"
       rel="noopener noreferrer"
       ><img src="/icons/jupiter.png" alt="logo" class="h-10 w-10" /><span
