@@ -22,6 +22,9 @@ export default {
     },
     raydium(): string {
       return this.$raydium
+    },
+    dexTools(): string {
+      return this.$dextools
     }
   }
 }
@@ -99,6 +102,16 @@ export default {
       ><img src="/icons/raydium.png" alt="logo" class="h-10 w-10" /><span
         class="min-w-24 bg-[#008080] text-center"
         >Raydium</span
+      ></a
+    >
+    <a
+      class="flex flex-col items-center gap-1"
+      :href="dexTools"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><img src="/icons/dextools.png" alt="logo" class="h-10 w-8" /><span
+        class="min-w-24 bg-[#008080] text-center"
+        >DexTools</span
       ></a
     >
     <!-- <a class="flex flex-col items-center gap-1" :href="dex"

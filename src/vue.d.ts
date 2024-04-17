@@ -10,5 +10,6 @@ declare module '@vue/runtime-core' {
         $dex: string;
         $raydium: string;
         $jupiter: string;
+        $dextools: string;
     }
 }
