@@ -32,7 +32,7 @@ export default {
 
 <template>
   <div
-    class="grid h-[70%] grid-flow-row items-start justify-center gap-x-1 gap-y-3 text-sm sm:grid-cols-2 sm:grid-rows-4"
+    class="grid h-[70%] grid-flow-row items-start justify-center gap-x-1 gap-y-3 text-sm sm:grid-flow-col sm:grid-rows-4"
   >
     <a
       class="flex flex-col items-center gap-1"
@@ -114,13 +114,15 @@ export default {
         >DexTools</span
       ></a
     >
-    <!-- <a class="flex flex-col items-center gap-1" :href="dex"
-    target="_blank"
+    <a
+      class="flex flex-col items-center gap-1"
+      :href="dex"
+      target="_blank"
       rel="noopener noreferrer"
       ><img src="/icons/jupiter.png" alt="logo" class="h-10 w-10" /><span
         class="min-w-24 bg-[#008080] text-center"
         >Jupiter</span
       ></a
-    >  -->
+    >
   </div>
 </template>

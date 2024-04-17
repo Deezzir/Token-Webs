@@ -12,7 +12,7 @@ app.config.globalProperties.$buyLink = 'https://raydium.io/swap/?inputCurrency=4
 app.config.globalProperties.$telegramDev = 'https://t.me/lettodev'
 app.config.globalProperties.$dex = 'https://dexscreener.com/solana/ERCD6qtvn4sWhmNBLyPXfoKghjFRM3gxAYKxNzcw9a5x'
 app.config.globalProperties.$raydium = 'https://raydium.io/swap/?inputCurrency=4inoptdokTnnH5cU64CP64WQbeV6gdFUVmiokPfwzbsL&outputCurrency=sol&outputSymbol=4inopt&fixed=out'
-app.config.globalProperties.$jupiter = 'Coming'
+app.config.globalProperties.$jupiter = 'https://jup.ag/swap/4inoptdokTnnH5cU64CP64WQbeV6gdFUVmiokPfwzbsL-SOL'
 app.config.globalProperties.$dextools = 'https://www.dextools.io/app/en/solana/pair-explorer/ERCD6qtvn4sWhmNBLyPXfoKghjFRM3gxAYKxNzcw9a5x?t=1713314960171'
 
 app.directive('click-outside', {
