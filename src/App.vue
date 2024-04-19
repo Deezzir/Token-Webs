@@ -110,7 +110,10 @@ export default {
               :image_path="desert2"
               class="absolute w-auto -translate-y-[10%] sm:static md:w-1/3"
             />
-            <ChartComponent class="absolute w-auto translate-y-[15%] sm:static md:w-1/3" />
+            <ChartComponent
+              @press="popupReopen"
+              class="absolute w-auto translate-y-[15%] sm:static md:w-1/3"
+            />
             <PictureComponent
               title="Desert1.png"
               @press="popupReopen"

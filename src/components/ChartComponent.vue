@@ -4,9 +4,10 @@ import WindowButtons from '@/components/common/WindowButtonsComponent.vue'
 
 <script lang="ts">
 export default {
-  computed: {
-    buyLink(): string {
-      return this.$buyLink
+  emits: ['press'],
+  methods: {
+    handlePress() {
+      this.$emit('press')
     }
   }
 }
@@ -20,7 +21,11 @@ export default {
           <img src="/icons/dex.png" alt="logo" class="h-6 w-6" />
           <span class="">Mibibi - Dexscreener</span>
         </div>
-        <WindowButtons />
+        <WindowButtons
+          :minimize-func="handlePress"
+          :maximize-func="handlePress"
+          :close-func="handlePress"
+        />
       </div>
     </div>
     <div class="h-full w-full border-[1px] border-gray-400 bg-white p-[6px]">
