@@ -1,1 +1,1 @@
-# Token Website
+# Gendalf Party Token Website
