@@ -10,7 +10,7 @@ export default defineComponent({
       isHovered: false,
       hasCopied: false,
       isNarrowScreen: false,
-      ca: 'coming'
+      ca: 'BJNzdhKyZEp8x2tp3kENCbKhKRiVwVcWLvXRZzJ5pump'
     }
   },
   created() {
@@ -59,7 +59,7 @@ export default defineComponent({
       <TelegramIcon />
     </a>
     <a
-      href="https://www.pump.fun/coming"
+      href="https://www.pump.fun/BJNzdhKyZEp8x2tp3kENCbKhKRiVwVcWLvXRZzJ5pump"
       rel="noopener noreferrer"
       class="text-[#181818] font-bold p-3 sm:p-6 rounded px-4 sm:mx-6"
     >
