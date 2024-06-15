@@ -10,7 +10,7 @@ export default defineComponent({
       isHovered: false,
       hasCopied: false,
       isNarrowScreen: false,
-      ca: '2BWBEWdwFLeB34dAnvC9SiGmLneHpWC3xuD29e5urwC9'
+      ca: 'coming'
     }
   },
   created() {
@@ -45,28 +45,28 @@ export default defineComponent({
 <template>
   <div class="flex flex-row justify-center items-center pt-5 pb-2">
     <a
-      href="https://twitter.com/WVWVVVVVVVV"
+      href="https://x.com/wvwvvvvvvvv"
       rel="noopener noreferrer"
       class="text-[#181818] font-bold p-3 sm:p-6 rounded px-4 sm:mx-6"
     >
       <TwitterIcon />
     </a>
     <a
-      href="https://t.me/wvwvvvvvv"
+      href="https://t.me/vwvwvwvvvvw"
       rel="noopener noreferrer"
       class="text-[#181818] font-bold p-3 sm:p-6 rounded px-4 sm:mx-6"
     >
       <TelegramIcon />
     </a>
     <a
-      href="https://www.pump.fun/2BWBEWdwFLeB34dAnvC9SiGmLneHpWC3xuD29e5urwC9"
+      href="https://www.pump.fun/coming"
       rel="noopener noreferrer"
       class="text-[#181818] font-bold p-3 sm:p-6 rounded px-4 sm:mx-6"
     >
       <PumpIcon />
     </a>
     <a
-      href="https://dexscreener.com/solana/C4R8Z8TS8NyLCxaWxEkXghQFW8GDAuYwQuoDqMRAYWJM"
+      href="https://dexscreener.com/solana/coming"
       rel="noopener noreferrer"
       class="text-[#181818] font-bold p-3 sm:p-6 rounded px-4 sm:mx-6"
     >
